@@ -10,7 +10,7 @@ Things to do in the site.
 - Select 7 songs to play, however you can set the None option to have nothing playing.
 - Sumbit a Dance gif to the site and be in the Gif Dance Party.
 
-List of dancers
+List of dancers (click on the blue scrollbar to select a dancer, then, click on add to party to have them in the party)
 - Scumbag Brian
 - Humpery
 - Smooch
@@ -25,7 +25,7 @@ List of dancers
 - Fred
 - Charlie
 
-List of songs
+List of songs (click on the orange scrollbar to select a song, then click on the play it button to have it playing)
 - Twist
 - Grounded
 - Walkmen
