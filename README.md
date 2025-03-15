@@ -24,6 +24,7 @@ List of dancers (click on the blue scrollbar to select a dancer, then, click on 
 - No Shorts
 - Fred
 - Charlie
+- Mid Aged Maranda
 
 List of songs (click on the orange scrollbar to select a song, then click on the play it button to have it playing)
 - Twist
