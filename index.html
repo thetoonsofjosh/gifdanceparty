@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>  <!-- HTML5 -->
   
 <head>
@@ -6,19 +5,27 @@
   <title>GIF DANCE PARTY</title>
 
   <!--
+  <script language="javascript" type="text/javascript">
+  window.location.href="/under_construction.html"
+  </script>
   <link rel="stylesheet" type="text/css" href="jquery-ui-1.10.2.custom.min.css">
   <script type="text/javascript" src="jquery.min.js"></script> 
   <script type="text/javascript" src="jquery-ui-1.10.2.custom.min.js"></script>
   -->
 
-  <link rel="stylesheet" type="text/css" href="style.css"> <!-- my awesome stylesheet -->
+   <!-- <link rel="stylesheet" type="text/css" href="style.css">  my awesome stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.2/themes/vader/jquery-ui.css" />
   <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
   <script src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
   <script src="js/jquery.backstretch.min.js"></script> 
   <script src="js/buzz.js"></script> 
-  <link href='https://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
+  <!--<link href='https://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>-->
+  <link href='https://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="js/jquery.simplemodal.1.4.4.min.js"></script>
+
+  <script type="text/javascript" src="js/underscore-min.js"></script>
+  <script type="text/javascript" src="js/jquery.ba-bbq.min.js"></script>
 
 	<meta name="title" content="GIF DANCE PARTY" />
 	<meta name="description" content="Come join the party!" />
@@ -31,11 +38,9 @@
 
 	<img src="dancers/carlton.png" style="display:none;height:0px;width:0px;">
 
-<!--
-  <script language="javascript" type="text/javascript">
-  window.location.href="https://gifdanceparty.com/under_construction.html"
-  </script>
-  -->
+
+
+
 
 
   <div id="dancefloor">
@@ -59,10 +64,13 @@
       </div>
       <div class="menu_item" style="margin-left:3px;color:#83d8ff;">
         <select class="menu_sel" id="select_dancer" style="background-color:#83d8ff;">
-
+          <option value="">Select A Dancer</option>
           <option value="scumbag_brian">Scumbag Brian</option>
           <option value="humpery">Humpery</option>
           <option value="smooch">Smooch</option>
+          <option value="arnold">Arnold</option>
+          <option value="kitty">Kitty</option>
+          <option value="fatspidey">Fat Spidey</option>
           <option value="the_wizard">The Wizard</option>
           <option value="banana">Banana</option>
           <option value="theworm">The Worm</option>
@@ -81,8 +89,14 @@
           <option value="bmo">BMO</option>
           <option value="fabio">Fabio</option>
           <option value="maranda">Maranda</option>
+          <option value="pedo_pickle">Pedo Pickle</option>
           <option value="bones">Bones</option>
           <option value="lilguy">Lil' Guy</option>
+          <option value="nerd">Nerd</option>
+          <option value="hula">Hoola Hoop</option>
+          <option value="white_guy">White Guy</option>
+          <option value="squid_word">Squid Word</option>
+          <option value="green_lady">Green Lady</option>
           
           <!-- <option value="mid_aged">Mid Aged Maranda</option> -->
         </select>
@@ -106,8 +120,15 @@
         </select>
       <!-- <span id="playit" style="">PLAY IT</span> -->
       </div>
+      <!--
       <div class="menu_item" id="pause_button" title="PAUSE" style="margin-left:5px;margin-bottom:5px;font-size:16px;cursor:pointer;">
       ▌▌
+      </div>
+      -->
+
+      <!-- share -->
+      <div  class="menu_item" style="margin-left:35px;color:#f54848;" >
+        <span id="share">SHARE DANCEFLOOR</span>
       </div>
 
       <!-- submit -->
@@ -137,17 +158,18 @@
       <!-- MODAL LOADING -->
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <div id="modal_loading">
-        LOADING GIF DANCE PARTY &nbsp; <img src="littleraver.gif" width="39" height="39">
+        LOADING GIF DANCE PARTY &nbsp; <img src="littleraver.gif" width="30" height="30">
       </div>
 
 
       <!-- MODAL ABOUT -->
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <div id="modal_about">
-        <div id="close_modal_about">X</div>
+        <div id="close_modal_about"><b>X</b></div>
         CREATED MARCH 2013
         <div style="height:10px">&nbsp;</div>
         BY <a href="https://fuzzywobble.com" target="_blank">FUZZY WOBBLE</a> 
+        WITH HELP FROM <a href="https://www.banditbrandit.com/" target="_blank">PATRICK BRANDT</a> 
         <div style="height:10px">&nbsp;</div>
         FOR THE 'HUMOR & CODE' CLASS AT PARSONS SCHOOL OF DESIGN & TECHNOLGOY
       </div>
@@ -156,20 +178,30 @@
       <!-- MODAL SUBMIT -->
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <div id="modal_submit">
-        <div id="close_modal_submit">X</div>
+        <div id="close_modal_submit"><b>X</b></div>
         ANYONE CAN SUBMIT A DANCE GIF AND JOIN THE GIF DANCE PARTY
         <div style="height:10px">&nbsp;</div>
-        KEEP IN MIND THAT IT IS DIFFICULT TO REMOVE THE BACKGROUND FROM A 
-        GIF ANIMATION
+        SUBMIT TO <span style='color:#00ffba;'>GIFPOW@GMAIL.COM</span>
         <div style="height:10px">&nbsp;</div>
-        SUBMIT URL <a href="https://gifdanceparty.com/upload.php" target="_blank" title="coming soon...">HERE</a>
+        ONLY GIFS WITH TRANSPARENT BACKGROUNDS AND FULL BODIES WILL BE USED
+      </div>
+
+      <!-- MODAL SHARE -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <div id="modal_share">
+        <div id="close_modal_share"><b>X</b></div>    
+        URL: 
+        <div style="height:10px">&nbsp;</div>
+        <div id="shareURL"></div>
+        <div style="height:10px">&nbsp;</div>
+        (Right click, 'copy link')
       </div>
 
     </div>
 
     <div id="likethis"></div>
 
-    <div id="fuzzy">Created by <a href='https://fuzzywobble.com' target='_blank'>Fuzzy Wobble</a> &copy; 2013 <br>If you enjoy this, try <a href="https://gifpow.com">GIFPOW</a></div>
+    <div id="fuzzy"><a href='/gifdanceparty' >GIFDANCEPARTY.COM</a> Created by <a href='https://fuzzywobble.com' target='_blank'>Fuzzy Wobble</a> &copy; 2013 <!--<br>If you enjoy this, try <a href="https://gifpow.com">GIFPOW</a></div>-->
 
   </div>
 </body>
@@ -179,8 +211,7 @@
 
 
 
-<script src="my.js"></script> 
-
+ <script src="my_jquery_obfs.js"></script> 
 
 
 
