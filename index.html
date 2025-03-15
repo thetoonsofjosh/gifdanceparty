@@ -1,204 +1,191 @@
-
 <!DOCTYPE html>  <!-- HTML5 -->
-  
-<head>
-  <meta charset="utf-8">
-  <title>Giphy presents GIF Dance Party</title>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.2/themes/vader/jquery-ui.css" />
-  <script src="scripts.min.js"></script> 
-  <link rel="stylesheet" type="text/css" href="style.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>
 
-  <meta name="title" content="Giphy presents GIF Dance Party" />
-  <meta name="description" content="Come join the party!" />
+<head>
+    <meta charset="utf-8">
+    <title>Giphy presents GIF Dance Party</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/vader/jquery-ui.css" />
+    <script src="scripts.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>
+
+    <meta name="title" content="Giphy presents GIF Dance Party" />
+    <meta name="description" content="Come join the party!" />
 
 </head>
-  
+
 <body>
 
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=406655189415060";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+
+    <div id="dancefloor">
+        <div id="menu_top">
+            <center>
+                <!-- switch dancefloor -->
+                <div class="menu_item" style="color:#fcff00;">
+                    <span id="dancefloorswitch">DANCEFLOOR</span>
+                </div>
+
+                <!-- add to party -->
+                <div class="menu_item" style="margin-left:35px;color:#83d8ff;">
+                    DANCERS
+                </div>
+                <div class="menu_item" style="margin-left:3px;color:#83d8ff;">
+                    <select class="menu_sel" id="select_dancer" style="background-color:#83d8ff;">
+                        <option value="">Select A Dancer</option>
+                        <option value="scumbag_brian">Scumbag Brian</option>
+                        <option value="humpery">Humpery</option>
+                        <option value="smooch">Smooch</option>
+                        <option value="arnold">Arnold</option>
+                        <option value="kitty">Kitty</option>
+                        <option value="fatspidey">Fat Spidey</option>
+                        <option value="the_wizard">The Wizard</option>
+                        <option value="banana">Banana</option>
+                        <option value="theworm">The Worm</option>
+                        <option value="pumpgirl">Pump Girl</option>
+                        <option value="foreveralone">Forever Alone</option>
+                        <option value="carlton">Carlton</option>
+                        <option value="spongey_bob">Spongey Bob</option>
+                        <option value="bear">Bear</option>
+                        <option value="roger">Roger</option>
+                        <option value="noshorts">No Shorts</option>
+                        <option value="fred">Fred</option>
+                        <option value="charlie">Charlie</option>
+                        <option value="apple">Apple</option>
+                        <option value="thehop">The Hop</option>
+                        <option value="bananabounce">Banana Bounce</option>
+                        <option value="bmo">BMO</option>
+                        <option value="fabio">Fabio</option>
+                        <option value="maranda">Maranda</option>
+                        <option value="pedo_pickle">Pedo Pickle</option>
+                        <option value="bones">Bones</option>
+                        <option value="lilguy">Lil' Guy</option>
+                        <option value="nerd">Nerd</option>
+                        <option value="hula">Hoola Hoop</option>
+                        <option value="white_guy">White Guy</option>
+                        <option value="squid_word">Squid Word</option>
+                        <option value="green_lady">Green Lady</option>
+
+                        <!-- <option value="mid_aged">Mid Aged Maranda</option> -->
+                    </select>
+                    <!-- <span id="addtoparty" style="">ADD TO PARTY</span> -->
+                </div>
+
+                <!-- play it -->
+                <div class="menu_item" style="margin-left:35px;color:#ffd283;">
+                    MUSIC
+                </div>
+                <div class="menu_item" style="margin-left:3px;color:#ffd283;">
+                    <select class="menu_sel" id="select_song" style="background-color:#ffd283;">
+                        <option value="" >NO MUSIC</option>
+                        <option value="twist" SELECTED>Twist</option>
+                        <option value="grounded">Grounded</option>
+                        <option value="walkmen">Walkmen</option>
+                        <option value="wegotyou">We Got You</option>
+                        <option value="bazz">Bazz</option>
+                        <option value="fatboy">Fatboy</option>
+                        <option value="nahnahnah">Nah Nah Nah</option>
+                    </select>
+                    <!-- <span id="playit" style="">PLAY IT</span> -->
+                </div>
+                <!--
+                <div class="menu_item" id="pause_button" title="PAUSE" style="margin-left:5px;margin-bottom:5px;font-size:16px;cursor:pointer;">
+                    ▌▌
+                </div>
+                -->
+
+                <!-- share -->
+                <div  class="menu_item" style="margin-left:35px;color:#f54848;" >
+                    <span id="share">SHARE DANCEFLOOR</span>
+                </div>
+
+                <!-- submit -->
+                <div  class="menu_item" style="margin-left:35px;color:#00ffba;" >
+                    <span id="submit">SUBMIT</span>
+                </div>
+
+                <!-- about -->
+                <div  class="menu_item" style="margin-left:35px;color:#f368ff;" >
+                    <span id="about">ABOUT</span>
+                </div>
+
+            </center>
+        </div>
+
+
+        <!-- DANCERS -->
+        <div id="dancers"></div>
 
 
 
+        <div class="content_center">
+            <!-- MODAL LOADING -->
+            <div id="modal_loading">
+                LOADING GIF DANCE PARTY &nbsp; <img src="dancers/littleraver.gif" width="30" height="30">
+            </div>
 
 
+            <!-- MODAL ABOUT -->
+            <div id="modal_about">
+                <div id="close_modal_about"><b>X</b></div>
+                CREATED MARCH 2013
+                <div style="height:10px">&nbsp;</div>
+                BY <a href="http://fuzzywobble.com" target="_blank">FUZZY WOBBLE</a>
+                WITH HELP FROM <a href="http://www.banditbrandit.com/" target="_blank">PATRICK BRANDT</a>
+                <div style="height:10px">&nbsp;</div>
+                FOR THE 'HUMOR & CODE' CLASS AT PARSONS SCHOOL OF DESIGN & TECHNOLGOY
+            </div>
 
 
-  <div id="dancefloor">
+            <!-- MODAL SUBMIT -->
+            <div id="modal_submit">
+                <div id="close_modal_submit"><b>X</b></div>
+                ANYONE CAN SUBMIT A DANCE GIF AND JOIN THE GIF DANCE PARTY
+                <div style="height:10px">&nbsp;</div>
+                SUBMIT TO <span style='color:#00ffba;'>GIFPOW@GMAIL.COM</span>
+                <div style="height:10px">&nbsp;</div>
+                ONLY GIFS WITH TRANSPARENT BACKGROUNDS AND FULL BODIES WILL BE USED
+            </div>
 
+            <!-- MODAL SHARE -->
+            <div id="modal_share">
+                <div id="close_modal_share"><b>X</b></div>
+                URL:
+                <div style="height:10px">&nbsp;</div>
+                <div id="shareURL"></div>
+                <div style="height:10px">&nbsp;</div>
+                (Right click, 'copy link')
+            </div>
 
+        </div>
 
+        <div id="fuzzy">
+            <a href="http://giphy.com"><img src="logo_300w_horizontal.png" /></a>
+        </div>
+        <div id="otherfuzzy">
+            <a href="http://giphy.com">Giphy</a> presents GIF Dance Party, created by <a href='http://fuzzywobble.com' target='_blank'>Fuzzy Wobble</a> &copy; 2013
+        </div>
+        <div class="fb-like" data-href="http://giphy.com/gifdanceparty/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false">
+    </div><!-- end dancefloor -->
 
-    <!-- MENU TOP -->
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div id="menu_top">
-    <center>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-38174542-1']);
+        _gaq.push(['_trackPageview']);
 
-      <!-- switch dancefloor --> 
-      <div class="menu_item" style="color:#fcff00;">
-        <span id="dancefloorswitch">DANCEFLOOR</span>
-      </div>
-
-      <!-- add to party --> 
-      <div class="menu_item" style="margin-left:35px;color:#83d8ff;">
-      DANCERS
-      </div>
-      <div class="menu_item" style="margin-left:3px;color:#83d8ff;">
-        <select class="menu_sel" id="select_dancer" style="background-color:#83d8ff;">
-          <option value="">Select A Dancer</option>
-          <option value="scumbag_brian">Scumbag Brian</option>
-          <option value="humpery">Humpery</option>
-          <option value="smooch">Smooch</option>
-          <option value="arnold">Arnold</option>
-          <option value="kitty">Kitty</option>
-          <option value="fatspidey">Fat Spidey</option>
-          <option value="the_wizard">The Wizard</option>
-          <option value="banana">Banana</option>
-          <option value="theworm">The Worm</option>
-          <option value="pumpgirl">Pump Girl</option>
-          <option value="foreveralone">Forever Alone</option>
-          <option value="carlton">Carlton</option>
-          <option value="spongey_bob">Spongey Bob</option>
-          <option value="bear">Bear</option>
-          <option value="roger">Roger</option>
-          <option value="noshorts">No Shorts</option>
-          <option value="fred">Fred</option>
-          <option value="charlie">Charlie</option>
-          <option value="apple">Apple</option>
-          <option value="thehop">The Hop</option>
-          <option value="bananabounce">Banana Bounce</option>
-          <option value="bmo">BMO</option>
-          <option value="fabio">Fabio</option>
-          <option value="maranda">Maranda</option>
-          <option value="pedo_pickle">Pedo Pickle</option>
-          <option value="bones">Bones</option>
-          <option value="lilguy">Lil' Guy</option>
-          <option value="nerd">Nerd</option>
-          <option value="hula">Hoola Hoop</option>
-          <option value="white_guy">White Guy</option>
-          <option value="squid_word">Squid Word</option>
-          <option value="green_lady">Green Lady</option>
-          
-          <!-- <option value="mid_aged">Mid Aged Maranda</option> -->
-        </select>
-      <!-- <span id="addtoparty" style="">ADD TO PARTY</span> -->
-      </div>
-
-      <!-- play it -->  
-      <div class="menu_item" style="margin-left:35px;color:#ffd283;">
-      MUSIC
-      </div>
-      <div class="menu_item" style="margin-left:3px;color:#ffd283;">
-        <select class="menu_sel" id="select_song" style="background-color:#ffd283;">
-          <option value="" >NO MUSIC</option>
-          <option value="twist" SELECTED>Twist</option>
-          <option value="grounded">Grounded</option>
-          <option value="walkmen">Walkmen</option>
-          <option value="wegotyou">We Got You</option>
-          <option value="bazz">Bazz</option>
-          <option value="fatboy">Fatboy</option>
-          <option value="nahnahnah">Nah Nah Nah</option>
-        </select>
-      <!-- <span id="playit" style="">PLAY IT</span> -->
-      </div>
-      <!--
-      <div class="menu_item" id="pause_button" title="PAUSE" style="margin-left:5px;margin-bottom:5px;font-size:16px;cursor:pointer;">
-      ▌▌
-      </div>
-      -->
-
-      <!-- share -->
-      <div  class="menu_item" style="margin-left:35px;color:#f54848;" >
-        <span id="share">SHARE DANCEFLOOR</span>
-      </div>
-
-      <!-- submit -->
-      <div  class="menu_item" style="margin-left:35px;color:#00ffba;" >
-        <span id="submit">SUBMIT</span>
-      </div>
-
-       <!-- about -->
-      <div  class="menu_item" style="margin-left:35px;color:#f368ff;" >
-        <span id="about">ABOUT</span>
-      </div>     
-
-    </center>
-    </div>
-
-
-    <!-- DANCERS -->
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div id="dancers">
-    </div>
-
-
-
-    <div class="content_center">
-
-
-      <!-- MODAL LOADING -->
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <div id="modal_loading">
-        LOADING GIF DANCE PARTY &nbsp; <img src="dancers/littleraver.gif" width="30" height="30">
-      </div>
-
-
-      <!-- MODAL ABOUT -->
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <div id="modal_about">
-        <div id="close_modal_about"><b>X</b></div>
-        CREATED MARCH 2013
-        <div style="height:10px">&nbsp;</div>
-        BY <a href="https://fuzzywobble.com" target="_blank">FUZZY WOBBLE</a> 
-        WITH HELP FROM <a href="https://www.banditbrandit.com/" target="_blank">PATRICK BRANDT</a> 
-        <div style="height:10px">&nbsp;</div>
-        FOR THE 'HUMOR & CODE' CLASS AT PARSONS SCHOOL OF DESIGN & TECHNOLGOY
-      </div>
-
-
-      <!-- MODAL SUBMIT -->
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <div id="modal_submit">
-        <div id="close_modal_submit"><b>X</b></div>
-        ANYONE CAN SUBMIT A DANCE GIF AND JOIN THE GIF DANCE PARTY
-        <div style="height:10px">&nbsp;</div>
-        SUBMIT TO <span style='color:#00ffba;'>GIFPOW@GMAIL.COM</span>
-        <div style="height:10px">&nbsp;</div>
-        ONLY GIFS WITH TRANSPARENT BACKGROUNDS AND FULL BODIES WILL BE USED
-      </div>
-
-      <!-- MODAL SHARE -->
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <div id="modal_share">
-        <div id="close_modal_share"><b>X</b></div>    
-        URL: 
-        <div style="height:10px">&nbsp;</div>
-        <div id="shareURL"></div>
-        <div style="height:10px">&nbsp;</div>
-        (Right click, 'copy link')
-      </div>
-
-    </div>
-
-    <div id="fuzzy">
-        <a href="https://giphy.com"><img src="logo_300w_horizontal.png" /></a>
-</div>
-<div id="otherfuzzy">
-    <a href="https://giphy.com">Giphy</a> presents GIF Dance Party, created by <a href='https://fuzzywobble.com' target='_blank'>Fuzzy Wobble</a> &copy; 2013
-
-  </div>
-
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-38174542-1']);
-            _gaq.push(['_trackPageview']);
-
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
-  
+        (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+    </script>
 </body>
 
 
