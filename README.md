@@ -6,7 +6,7 @@ This may also include stuff included from all eras of the original site, as well
 Things to do in the site.
 
 - Change the dance floor backdrop, There's 5 backdrops in total.
-- Add a total of 17 dancers (animated and irl), They can be dragged around, are resizable, can be set from either the back or the front. or can be deleted.
+- Add a total of 23 dancers (animated and irl), They can be dragged around, are resizable, can be set from either the back or the front. or can be deleted.
 - Select 7 songs to play, however you can set the None option to have nothing playing.
 - Sumbit a Dance gif to the site and be in the Gif Dance Party.
 
@@ -16,6 +16,7 @@ List of dancers (click on the blue scrollbar to select a dancer, then, click on 
 - Smooch
 - The Wizard
 - Banana
+- The Worm
 - Pump Girl
 - Carlton
 - Spongey Bob
@@ -24,7 +25,11 @@ List of dancers (click on the blue scrollbar to select a dancer, then, click on 
 - No Shorts
 - Fred
 - Charlie
+- Apple
+- The Hop
+- Banana Bounce
 - BMO
+- Fabio
 - Maranda
 - Bones
 - Lil' Guy
