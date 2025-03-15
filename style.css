@@ -1,5 +1,5 @@
 html, body{ 
-	font-family: 'Monofett', cursive;
+	font-family: 'Lilita One', cursive;
 	overflow: hidden;
 } 
 a:link {
@@ -18,13 +18,31 @@ a:active {
 	color:#c73439;
 	text-decoration: none;
 }
+
+ ::-moz-selection{
+    background-color:Transparent;
+    color:#000;
+    }
+
+    ::selection {
+    background-color:Transparent;
+    color:#000;
+    }
+
+    
 .largetext{
-	font-family: 'Monofett', cursive;
+	font-family: 'Lilita One', cursive;
 	font-size: 80px;
 	color: #000;
 }
+#pause_button{
+	color:#ffd283;
+}
+#pause_button:hover{
+	color:#fff;
+}
 #likethis{
-	background-image:url('img/likethis.png');
+	background-image:url('/img/likethis.png');
 	width:170px;
 	height: 26px;
 	position: absolute;
@@ -45,9 +63,14 @@ a:active {
 	z-index: 2800;
 	left:5px;
 	bottom:10px;
-	cursor: pointer;
 	opacity:0.7;
 	filter:alpha(opacity=70);	
+}
+#fuzzy a{
+	color:#999;
+}
+#fuzzy a:hover{
+	color:#eee;
 }
 #likethis:hover{
 	opacity:1.0;
@@ -70,9 +93,9 @@ a:active {
 	/*position: absolute; */
 	/*left: 40px; */
 	/*top: 80px; */
-	padding:0px 5px;
-	font-family: 'Monofett', cursive;
-	font-size: 40px;
+	padding:5px;
+	font-family: 'Lilita One', cursive;
+	font-size: 30px;
 	color: #fff;
 }
 #modal_about a{
@@ -88,8 +111,10 @@ a:active {
 	text-decoration: none;
 }
 
+
+
 #modal_loading{
-	width:620px;
+	width:490px;
 	height: auto;
 	background-color:rgba(0,0,0,0.7);
 	z-index: 2000;
@@ -99,9 +124,9 @@ a:active {
 	/*position: absolute; */
 	/*left: 40px; */
 	/*top: 80px; */
-	padding:5px 10px 10px 10px;
-	font-family: 'Monofett', cursive;
-	font-size: 40px;
+	padding:5px 10px;
+	font-family: 'Lilita One', cursive;
+	font-size: 30px;
 	color: #fff;
 }
 
@@ -115,9 +140,9 @@ a:active {
 	/*position: absolute; */
 	/*left: 40px; */
 	/*top: 80px; */
-	padding:0px 5px;
-	font-family: 'Monofett', cursive;
-	font-size: 40px;
+	padding:5px;
+	font-family: 'Lilita One', cursive;
+	font-size: 30px;
 	color: #fff;
 }
 #modal_submit a{
@@ -142,7 +167,7 @@ a:active {
 }
 
 .menu_sel{
-	font-family: 'Monofett', cursive;
+	font-family: 'Lilita One';
 	font-size: 20px;
 }
 .dance_outter{
@@ -151,6 +176,9 @@ a:active {
 	height:auto;
 	background-color:rgba(0,0,0,0.0);
 	border: none;
+}
+.dance_outter:hover{
+	cursor:move;
 }
 .resize_help{
 	font-family: Verdana, Geneva, sans-serif;
@@ -197,7 +225,7 @@ color: #fcff00;
 	color: #ff02fc;
 }
 #menu_top{
-	font-size: 30px;
+	font-size: 20px;
 	position: absolute;
 	text-align:center;
 	left:0px;
@@ -212,6 +240,35 @@ color: #fcff00;
 	display: inline-block;
 	width: auto;
 }
+
+
+    #share:hover {
+      color: #fff;
+    }
+    #share {
+      cursor: pointer;
+    }
+    #modal_share {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #FFFFFF;
+        font-family: 'Lilita One', cursive;
+        font-size: 30px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding:5px;
+        width: 550px;
+        z-index: 2000;
+    }
+    #close_modal_share {
+        color: #DDDDDD;
+        cursor: pointer;
+        display: block;
+        float: right;
+        font-family: Verdana,Geneva,sans-serif;
+        font-size: 16px;
+    }
+
 
 /* hover menu items ----------------------------- */
 #dancefloorswitch{
@@ -246,3 +303,24 @@ color: #fcff00;
 }
 
 
+
+/*
+     FILE ARCHIVED ON 20:23:31 Apr 17, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:23:48 Mar 15, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.6
+  exclusion.robots: 0.034
+  exclusion.robots.policy: 0.021
+  esindex: 0.011
+  cdx.remote: 39.758
+  LoadShardBlock: 349.669 (3)
+  PetaboxLoader3.datanode: 109.291 (4)
+  PetaboxLoader3.resolve: 315.894 (2)
+  load_resource: 111.647
+*/
