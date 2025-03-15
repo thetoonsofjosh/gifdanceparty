@@ -11,6 +11,8 @@ Things to do in the site.
 - Sumbit a Dance gif to the site and be in the Gif Dance Party.
 
 List of dancers (click on the blue scrollbar to select a dancer, then, click on add to party to have them in the party)
+- Chicken
+- Doggy
 - Scumbag Brian
 - Humpery
 - Smooch
