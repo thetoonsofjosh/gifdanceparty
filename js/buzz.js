@@ -864,8 +864,8 @@ var buzz = {
 
 }
 /*
-     FILE ARCHIVED ON 13:33:16 Aug 05, 2013 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 20:48:11 Mar 15, 2025.
+     FILE ARCHIVED ON 03:02:17 Nov 09, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:25:07 Mar 15, 2025.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -873,13 +873,13 @@ var buzz = {
 */
 /*
 playback timings (ms):
-  captures_list: 0.612
-  exclusion.robots: 0.03
-  exclusion.robots.policy: 0.018
-  esindex: 0.01
-  cdx.remote: 20.776
-  LoadShardBlock: 235.401 (3)
-  PetaboxLoader3.datanode: 256.198 (4)
-  load_resource: 81.455
-  PetaboxLoader3.resolve: 50.745
+  captures_list: 0.868
+  exclusion.robots: 0.046
+  exclusion.robots.policy: 0.026
+  esindex: 0.018
+  cdx.remote: 19.741
+  LoadShardBlock: 137.355 (3)
+  PetaboxLoader3.datanode: 159.752 (4)
+  load_resource: 102.728
+  PetaboxLoader3.resolve: 75.512
 */
