@@ -6,7 +6,7 @@ This may also include stuff included from all eras of the original site, as well
 Things to do in the site.
 
 - Change the dance floor backdrop, There's 5 backdrops in total.
-- Add a total of 32 dancers (animated and irl), They can be dragged around, are resizable, can be set from either the back or the front. or can be deleted.
+- Add a total of 46 dancers (animated and irl), They can be dragged around, are resizable, can be set from either the back or the front. or can be deleted.
 - Select 7 songs to play, however you can set the None option to have nothing playing.
 - Sumbit a Dance gif to the site and be in the Gif Dance Party.
 
@@ -45,6 +45,18 @@ List of dancers (click on the blue scrollbar to select a dancer, then, click on 
 - White Guy
 - Squid Word
 - Green Lady
+- Disco Ball
+- Jason
+- Pa
+- Pixelly
+- Pony Shuffle
+- Robot Hump
+- Guy In Short Shorts
+- Tej
+- The Scramble
+- Tim
+- Worm Lady
+- Yeti
 
 List of songs (click on the orange scrollbar to select a song, then click on the play it button to have it playing)
 - Twist
