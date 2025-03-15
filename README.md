@@ -6,7 +6,7 @@ This may also include stuff included from all eras of the original site, as well
 Things to do in the site.
 
 - Change the dance floor backdrop, There's 5 backdrops in total.
-- Add a total of 23 dancers (animated and irl), They can be dragged around, are resizable, can be set from either the back or the front. or can be deleted.
+- Add a total of 32 dancers (animated and irl), They can be dragged around, are resizable, can be set from either the back or the front. or can be deleted.
 - Select 7 songs to play, however you can set the None option to have nothing playing.
 - Sumbit a Dance gif to the site and be in the Gif Dance Party.
 
@@ -14,10 +14,14 @@ List of dancers (click on the blue scrollbar to select a dancer, then, click on 
 - Scumbag Brian
 - Humpery
 - Smooch
+- Arnold
+- Kitty
+- Fat Spidey
 - The Wizard
 - Banana
 - The Worm
 - Pump Girl
+- Forever Alone
 - Carlton
 - Spongey Bob
 - Bear
@@ -31,8 +35,14 @@ List of dancers (click on the blue scrollbar to select a dancer, then, click on 
 - BMO
 - Fabio
 - Maranda
+- Pedo Pickle
 - Bones
 - Lil' Guy
+- Nerd
+- Hoola Hoop
+- White Guy
+- Squid Word
+- Green Lady
 
 List of songs (click on the orange scrollbar to select a song, then click on the play it button to have it playing)
 - Twist
