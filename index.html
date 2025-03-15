@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>  <!-- HTML5 -->
 <html lang="en">
   
@@ -10,18 +11,146 @@
   <script type="text/javascript" src="jquery-ui-1.10.2.custom.min.js"></script>
   -->
   <link rel="stylesheet" type="text/css" href="style.css"> <!-- my awesome stylesheet -->
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.2/themes/vader/jquery-ui.css" />
-  <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
-  <script src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/vader/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
   <script src="js/jquery.backstretch.min.js"></script> 
   <script src="js/buzz.js"></script> 
-  <link href='https://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="js/jquery.simplemodal.1.4.4.min.js"></script>
+
+
+
+
+</head>
+  
+<body>
+  <div id="dancefloor">
+
+
+
+
+    <!-- MENU TOP -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div id="menu_top">
+    <center>
+
+      <!-- switch dancefloor --> 
+      <div class="menu_item" style="color:#fcff00;">
+        <span id="dancefloorswitch">DANCEFLOOR</span>
+      </div>
+
+      <!-- add to party --> 
+      <div class="menu_item" style="margin-left:25px;color:#83d8ff;">
+        <select class="menu_sel" id="select_dancer" style="background-color:#83d8ff;">
+
+          <option value="scumbag_brian">Scumbag Brian</option>
+          <option value="humpery">Humpery</option>
+          <option value="smooch">Smooch</option>
+          <option value="the_wizard">The Wizard</option>
+          <option value="banana">Banana</option>
+          <option value="pumpgirl">Pump Girl</option>
+          <option value="carlton">Carlton</option>
+          <option value="spongey_bob">Spongey Bob</option>
+          <option value="bear">Bear</option>
+          <option value="roger">Roger</option>
+          <option value="noshorts">No Shorts</option>
+          <option value="fred">Fred</option>
+          <option value="charlie">Charlie</option>
+          <!-- <option value="mid_aged">Mid Aged Maranda</option> -->
+        </select>
+      <span id="addtoparty" style="">ADD TO PARTY</span>
+      </div>
+
+      <!-- play it --> 
+      <div class="menu_item" style="margin-left:25px;color:#ffd283;">
+        <select class="menu_sel" id="select_song" style="background-color:#ffd283;">
+          <option value="" SELECTED>NONE</option>
+          <option value="twist">Twist</option>
+          <option value="grounded">Grounded</option>
+          <option value="walkmen">Walkmen</option>
+          <option value="wegotyou">We Got You</option>
+          <option value="bazz">Bazz</option>
+          <option value="fatboy">Fatboy</option>
+          <option value="nahnahnah">Nah Nah Nah</option>
+        </select>
+      <span id="playit" style="">PLAY IT</span>
+      </div>
+
+      <!-- submit -->
+      <div  class="menu_item" style="margin-left:25px;color:#00ffba;" >
+        <span id="submit">SUBMIT</span>
+      </div>
+
+       <!-- about -->
+      <div  class="menu_item" style="margin-left:25px;color:#f368ff;" >
+        <span id="about">ABOUT</span>
+      </div>     
+
+    </center>
+    </div>
+
+
+    <!-- DANCERS -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div id="dancers">
+    </div>
+
+
+
+    <div class="content_center">
+
+
+      <!-- MODAL LOADING -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <div id="modal_loading">
+        LOADING GIF DANCE PARTY &nbsp; <img src="littleraver.gif" width="39" height="39">
+      </div>
+
+
+      <!-- MODAL ABOUT -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <div id="modal_about">
+        <div id="close_modal_about">X</div>
+        CREATED MARCH 2013
+        <div style="height:10px">&nbsp;</div>
+        BY <a href="http://fuzzywobble.com" target="_blank">FUZZY WOBBLE</a> 
+        <div style="height:10px">&nbsp;</div>
+        FOR THE 'HUMOR & CODE' CLASS AT PARSONS SCHOOL OF DESIGN & TECHNOLGOY
+      </div>
+
+
+      <!-- MODAL SUBMIT -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <div id="modal_submit">
+        <div id="close_modal_submit">X</div>
+        ANYONE CAN SUBMIT A DANCE GIF AND JOIN THE GIF DANCE PARTY
+        <div style="height:10px">&nbsp;</div>
+        KEEP IN MIND THAT IT IS DIFFICULT TO REMOVE THE BACKGROUND FROM A 
+        GIF ANIMATION
+        <div style="height:10px">&nbsp;</div>
+        SUBMIT URL <a href="upload.php" target="_blank" title="coming soon...">HERE</a>
+      </div>
+
+    </div>
+
+    <div id="likethis"></div>
+
+    <div id="fuzzy">By <a href='http://fuzzywobble.com' target='_blank'>Fuzzy Wobble</a></div>
+
+  </div>
+</body>
+
+
+
+
+
 
 
   <script type="text/javascript"> 
 
-  //crazy live draggable/resizable function, only works with jquery 1.8.3? live depreciated, relaced with .on!
+  //----------------------------
+  //crazy live draggable/resizable function, only works with jquery 1.8.3? live depreciated, relaced with .on
   (function ($) {
      $.fn.liveDraggable = function (opts) {
         this.live("mouseover", function() {
@@ -33,7 +162,8 @@
      };
   }(jQuery));
 
-    (function ($) {
+  //----------------------------
+  (function ($) {
      $.fn.liveResizable = function (opts) {
         this.live("mouseover", function() {
            if (!$(this).data("init")) {
@@ -44,14 +174,15 @@
      };
   }(jQuery));
 
+  //----------------------------
   //disable selection of text
   (function($){
-      $.fn.disableSelection = function() {
-          return this
-                   .attr('unselectable', 'on')
-                   .css('user-select', 'none')
-                   .on('selectstart', false);
-      };
+    $.fn.disableSelection = function() {
+        return this
+                 .attr('unselectable', 'on')
+                 .css('user-select', 'none')
+                 .on('selectstart', false);
+    };
   })(jQuery);
 
 
@@ -63,8 +194,16 @@
   var zIndex_low = 499;
   var onDancer = 0;
 
-  // WINDOW LOAD
-  $(window).load(function() { //all images have loaded!
+
+
+
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  //WINDOW LOAD
+  $(window).load(function() { //all images have loaded! //everything had loaded, called THIRD
+
+
+    $("#modal_loading").hide();
+    $("#menu_top").show();
 
     $(".dancer").liveResizable({
       //handles: {s: document.getElementById("handle")},
@@ -80,8 +219,31 @@
 
   });
 
+
+
+
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   //GENERAL JQUERY
-  $(function(){
+  $(function(){ //general jquery, called FIRST
+
+
+      $("#modal_loading").show();
+      $("#menu_top").hide();
+
+      $.fn.preload = function() {
+          this.each(function(){
+              $('<img/>')[0].src = this;
+          });
+      }
+      $(['dancefloors/dancefloor_05.jpg','dancefloors/dancefloor_04.jpg','dancefloors/dancefloor_03.jpg','dancefloors/dancefloor_02.jpg','dancers/scumbag_brian.gif','dancers/humpery.gif','dancers/smooch.gif','dancers/the_wizard.gif','dancers/banana.gif','dancers/pumpgirl.gif','dancers/carlton.gif','dancers/spongey_bob.gif','dancers/bear.gif','dancers/mid_aged.gif','dancers/roger.gif','dancers/noshorts.gif','dancers/fred.gif','dancers/charlie.gif','dancefloors/dancefloor_01.jpg']).preload();
+
+
+    });
+
+
+
+
+    $(function(){
 
     //sound stuff
     buzz.defaults.loop = true;
@@ -203,9 +365,9 @@
     $("#modal_about").disableSelection();
 
 
-  $("#likethis").on('click', function(){
-       window.open("https://www.facebook.com/GifDanceParty");    
-  });
+    $("#likethis").on('click', function(){
+         window.open("http://www.facebook.com/GifDanceParty");    
+    });
 
   });
     
@@ -219,114 +381,9 @@
     ga('create', 'UA-42722838-1', 'gifdanceparty.com');
     ga('send', 'pageview');
   </script>
-
-</head>
   
-<body>
-  <div id="dancefloor">
 
 
 
 
-    <!-- MENU TOP -->
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div id="menu_top">
-    <center>
-
-      <!-- switch dancefloor --> 
-      <div class="menu_item" style="color:#fcff00;">
-        <span id="dancefloorswitch">DANCEFLOOR</span>
-      </div>
-
-      <!-- add to party --> 
-      <div class="menu_item" style="margin-left:25px;color:#83d8ff;">
-        <select class="menu_sel" id="select_dancer" style="background-color:#83d8ff;">
-
-          <option value="scumbag_brian">Scumbag Brian</option>
-          <option value="humpery">Humpery</option>
-          <option value="smooch">Smooch</option>
-          <option value="the_wizard">The Wizard</option>
-          <option value="banana">Banana</option>
-          <option value="pumpgirl">Pump Girl</option>
-          <option value="carlton">Carlton</option>
-          <option value="spongey_bob">Spongey Bob</option>
-          <option value="bear">Bear</option>
-          <option value="roger">Roger</option>
-          <option value="noshorts">No Shorts</option>
-          <option value="fred">Fred</option>
-          <option value="charlie">Charlie</option>
-        </select>
-      <span id="addtoparty" style="">ADD TO PARTY</span>
-      </div>
-
-      <!-- play it --> 
-      <div class="menu_item" style="margin-left:25px;color:#ffd283;">
-        <select class="menu_sel" id="select_song" style="background-color:#ffd283;">
-          <option value="" SELECTED>NONE</option>
-          <option value="twist">Twist</option>
-          <option value="grounded">Grounded</option>
-          <option value="walkmen">Walkmen</option>
-          <option value="wegotyou">We Got You</option>
-          <option value="bazz">Bazz</option>
-          <option value="fatboy">Fatboy</option>
-          <option value="nahnahnah">Nah Nah Nah</option>
-        </select>
-      <span id="playit" style="">PLAY IT</span>
-      </div>
-
-      <!-- submit -->
-      <div  class="menu_item" style="margin-left:25px;color:#00ffba;" >
-        <span id="submit">SUBMIT</span>
-      </div>
-
-       <!-- about -->
-      <div  class="menu_item" style="margin-left:25px;color:#f368ff;" >
-        <span id="about">ABOUT</span>
-      </div>     
-
-    </center>
-    </div>
-
-
-    <!-- DANCERS -->
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div id="dancers">
-    </div>
-
-
-
-    <div class="content_center">
-
-      <!-- MODAL ABOUT -->
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <div id="modal_about">
-        <div id="close_modal_about">X</div>
-        CREATED MARCH 2013
-        <div style="height:10px">&nbsp;</div>
-        BY <a href="https://fuzzywobble.com" target="_blank">FUZZY WOBBLE</a> 
-        <div style="height:10px">&nbsp;</div>
-        FOR THE 'HUMOR & CODE' CLASS AT PARSONS SCHOOL OF DESIGN & TECHNOLGOY
-      </div>
-
-
-      <!-- MODAL SUBMIT -->
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <div id="modal_submit">
-        <div id="close_modal_submit">X</div>
-        ANYONE CAN SUBMIT A DANCE GIF AND JOIN THE GIF DANCE PARTY
-        <div style="height:10px">&nbsp;</div>
-        KEEP IN MIND THAT IT IS DIFFICULT TO REMOVE THE BACKGROUND FROM A 
-        GIF ANIMATION
-        <div style="height:10px">&nbsp;</div>
-        SUBMIT URL <a href="upload.php" target="_blank" title="coming soon...">HERE</a>
-      </div>
-
-    </div>
-
-    <div id="likethis"></div>
-
-    <div id="fuzzy">By <a href='https://fuzzywobble.com' target='_blank'>Fuzzy Wobble</a></div>
-
-  </div>
-</body>
 </html>
