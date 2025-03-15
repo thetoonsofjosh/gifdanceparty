@@ -11,21 +11,19 @@ Things to do in the site.
 - Sumbit a Dance gif to the site and be in the Gif Dance Party.
 
 List of dancers (click on the blue scrollbar to select a dancer, then, click on add to party to have them in the party)
-
-2013 dancers
-- Scumbag Brian (debuted in July 2013)
-- Humpery (debuted in July 2013)
-- Smooch (debuted in July 2013)
-- The Wizard (debuted in July 2013)
-- Banana (debuted in July 2013)
-- Pump Girl (debuted in July 2013)
-- Carlton (debuted in July 2013)
-- Spongey Bob (debuted in July 2013)
-- Bear (debuted in July 2013)
-- Roger (debuted in July 2013)
-- No Shorts (debuted in July 2013)
-- Fred (debuted in July 2013)
-- Charlie (debuted in July 2013)
+- Scumbag Brian
+- Humpery
+- Smooch
+- The Wizard
+- Banana
+- Pump Girl
+- Carlton
+- Spongey Bob
+- Bear
+- Roger
+- No Shorts
+- Fred
+- Charlie
 
 List of songs (click on the orange scrollbar to select a song, then click on the play it button to have it playing)
 - Twist
