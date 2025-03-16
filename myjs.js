@@ -1,1 +1,510 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('4 u=1O;4 1h=p;4 K=2;4 2D=14;4 2p="39";4 L=1;4 3B="";4 3F="";4 t=0;4 1x=l;4 1b;4 10=4b;4 2R=4a;4 1c=3C;4 3D="2Y://"+1H.2v.4c;a(1H.2v.4d.4f("3G")!==-1){3D+="/3G/"}4 1S=0;4 1n=40;4 c={"6":1R,"4e-49":2p,"L":L,"48-3f":3B,"42-3f":3F,"K":K,"9":[{"6":"1","g":"3Z","T":0.23,"V":0.41,"W":0.15,"17":p,"k":l},{"6":"2","g":"3Y","T":0.32,"V":0.47,"W":0.16,"17":1O,"k":l},{"6":"3","g":"43","T":0.44,"V":0.30,"W":0.46,"17":1O,"k":l}]};5 12(6){1I(4 i=0;i<c.9.1G;i++){a(c.9[i].6==6){1N i}}1N l}5 1B(6,g,x,y,z,w){a(1S>=24){2i(5(){$(".Z").13(p);$(".45").13(p)},1O)}1J{$(".3a").4h("<j U=\'v\' b=\'"+6+"\' 2I=\'z-2t:"+z+";22:"+y+"19;26:"+x+"19;d:28;N:28;\'>"+"<j U=\'3t\' 2I=\'d:"+w+"19;N:28;\'><4r U=\'1i\' I-k=\'l\' 4q=\'m/9/"+g+".4s\' d=\'2y%\'></j>"+"<j U=\'3m 1d\'>4t</j><j U=\'3o 1d\'>4v</j><j U=\'2O 1d\'>4u</j><j U=\'4p 2j\'>3X</j><j U=\'3r 1d\'>X</j><j U=\'1Q 1d\' b=\'"+g+"\'>4o</j>"+"</j>");$(".1d,.2j").D();3k();2T();$("#"+6).E(".A-Y-1V").D();$("#"+6).E(".A-Y-1W").D();1S++}}5 3n(g,2e){u++;t++;4 1k=($("r").d()*0.18)*2e;a(1k>10){1k=10}a(1k<1c){1k=1c}1B(t,g,50,2y,u,1k);4 1a={"6":t,"g":g,"T":1R,"V":1R,"W":1R,"17":u,"k":l};1a.T=50/$("r").d();1a.V=2y/$("r").N();1a.W=$("#"+t).d()/$("r").d();c.9.3I(1a)}5 3q(6){$("#"+6).4k();4 q=12(6);c.9.4l(q,1);1S--}5 3h(6,x,y){4 q=12(6);c.9[q].T=x/$("r").d();c.9[q].V=y/$("r").N()}5 3s(6){4 q=12(6);1h--;c.9[q].17=1h;$("#"+6).C("z-2t",1h)}5 3p(6){4 q=12(6);u++;c.9[q].17=u;$("#"+6).C("z-2t",u)}5 3E(6){4 q=12(6);4 R=$("#"+c.9[q].6).E(".1i");a(R.s("I-k")==="l"){R.2z("k-h");R.s("I-k","O");c.9[q].k=O}1J{R.4n("k-h");R.s("I-k","l");c.9[q].k=l}}5 2V(6,d){4 q=12(6);c.9[q].W=d/$("r").d()}5 1Q(g,6){4 2x=$("#"+6).E(".1i").s("I-k");4 2u=$("#"+6).d();4 2f=$("#"+6).2b().26-40;4 2A=$("#"+6).2b().22;u++;t++;1B(t,g,2f,2A,u,2u);a(2x==="O"){$("#"+t).E(".1i").2z("k-h");$("#"+t).E(".1i").s("I-k","O")}4 1a={"6":t,"g":g,"T":2f/$("r").d(),"V":2A/$("r").N(),"W":2u/$("r").d(),"17":u,"k":2x};c.9.3I(1a)}$.3W.2N=5(x,y){7.C("2b","3S");a(x==1){7.C("26",2d.2Z(0,(($(7).29().d()-$(7).3T())/2))+"19")}a(y==1){7.C("22",2d.2Z(0,(($(7).29().N()-$(7).3U())/2))+"19")}1N 7};5 1e(){$(".3V").3R(5(){$(7).2N(1,1)})}$(1H).2k(5(){1e()});Q.3Q("3M",5(e){e.3L()},l);5 2T(){$(".v").3K({3O:l,2W:5(){1x=O},2C:5(2l,A){4 2s=$(7).2b();4 3j=2s.26;4 3l=2s.22;4 6=$(7).s("b");4 q=12(6);3h(6,3j,3l);1x=l}})}5 3k(){$(".3t").Y({58:O,59:3C,5a:10,5b:2R,2k:5(2l,A){$(7).29().C("d",A.1Z.d+"19").C("N",A.1Z.N+"19")},2C:5(2l,A){4 6=$(7).29().s("b");2V(6,A.1Z.d)}})}5 3w(){4 2a=B 52();1I(4 i=1;i<2D+1;i++){2a.4x(\'m/1M/1L\'+i+\'.1K\')}2a.51(5(){35()});2a.2W();a(2p=="39"){f.27.5d=O;f.27.55=[\'5c\',\'5e\'];f.27.5m=\'28\';f.27.5k=l;4 1s=B f.J("m/G/1s");1s.H("b","1s");4 1t=B f.J("m/G/1t");1t.H("b","1t");4 1p=B f.J("m/G/1p");1p.H("b","1p");4 1F=B f.J("m/G/1F");1F.H("b","1F");4 1q=B f.J("m/G/1q");1q.H("b","1q");4 1u=B f.J("m/G/1u");1u.H("b","1u");4 1r=B f.J("m/G/1r");1r.H("b","1r");4 1v=B f.J("m/G/1v");1v.H("b","1v");4 1E=B f.J("m/G/1E");1E.H("b","1E");4 1w=B f.J("m/G/1w");1w.H("b","1w");4 1D=B f.J("m/G/1D");1D.H("b","1D");4 1o=B f.J("m/G/1o");1o.H("b","1o");1b=B f.5j([1s,1t,1u,1r,1q,1o,1p,1F,1v,1E,1w,1D]);1b.1m(1n)}5 35(){4 o=2v.4H.3g(\'o=\')[1];a(o&&o!=4I){$.2G({1C:"34",33:"4J.38",I:{3c:o},2X:"2U",2Q:5(1f){a(1f.2B.2m){2P(37.4D(1f.2B.2m))}1J{21.1P("1f.2B.2m 4y 4A");1Y()}},3b:5(){21.1P("4C 4K 4L 2G 3b");1Y()}})}1J{1Y()}$(".31").11(2h,5(){$(".4U").P();$(".3a").P();$(".1j").P();$(".4T").P();$(".4V").P();$(".1j").1A("2k");1e()});1e()}}5 1Y(){1I(4 i=0;i<c.9.1G;i++){u++;t++;4 x=c.9[i].T*$("r").d();4 y=c.9[i].V*$("r").N();4 w=c.9[i].W*$("r").d();a(w>10){w=10}a(w<1c){w=1c}4 n=c.9[i].g;1B(t,n,x,y,u,w)}2i(5(){f.1T[L].2K().1m(1n)},2h);$(".1j").1A("m/1M/1L"+K+".1K")}5 2P(M){1I(4 i=0;i<M.9.1G;i++){u++;t++;4 3x=M.9[i].T*$("r").d();4 3v=M.9[i].V*$("r").N();4 1g=M.9[i].W*$("r").d();a(1g>10){1g=10}a(1g<1c){1g=1c}4 3y=M.9[i].g;4 1l=M.9[i].17;a(1l>u){u=1l}a(1l<1h){1h=1l}1B(t,3y,3x,3v,1l,1g);a(M.9[i].k===O){4 R=$("#"+t).E(".1i");R.2z("k-h");R.s("I-k","O")}}2i(5(){f.1T[M.L].2K().1m(1n)},2h);$(".1j").1A("m/1M/1L"+M.K+".1K");$(".1d,.2j").D();c=M}$(Q).4G(5(){1e();$(".3d").P();$(".Z").D();$(".5i").D();$(".1X").D();$(".5o").F(5(){4 g=$(7).s(\'b\');4 3i=$(7).s(\'I-1Z\');4 2n=3i.3g("x");4 2e=2n[0]/2n[1];3n(g,2e);$(".1X").11(p);$(".Z").11(p)});$(Q).S(\'F\',\'.3r\',5(){4 6=$(7).1y(".v").s("b");3q(6)});$(Q).S(\'F\',\'.3o\',5(){4 6=$(7).1y(".v").s("b");3p(6)});$(Q).S(\'F\',\'.2O\',5(){4 6=$(7).1y(".v").s("b");3s(6)});$(Q).S(\'F\',\'.1Q\',5(){4 g=$(7).s("b");4 6=$(7).1y(".v").s("b");1Q(g,6)});$(Q).S(\'F\',\'.3m\',5(){4 6=$(7).1y(".v").s("b");3E(6)});$("#4E").F(5(){L++;a(L>f.1T.1G-1){L=0}1b.2C();f.1T[L].2K().1m(1n);c.L=L});$("#4B").F(5(){K++;a(K>2D){K=1}$(".1j").1A("4X",l);$(".1j").1A("m/1M/1L"+K+".1K");c.K=K});$("#4P").F(5(){$(".Z").13(p);$(".4O").13(p)});$("#4M").F(5(){$(".Z").13(p);$(".4W").13(p);4 2F=3H(8);4 2M=37.4Z(c);$.2G({1C:"34",33:"4Y.38",I:{3c:2F,54:2M},2X:"2U",2Q:5(1f){a(1f.5f===O){$(".36").5n("2Y://53.56.57/?o="+2F)}1J{$(".1X").11(p);$(".Z").11(p)}}})});5 3H(3A){4 2H="";4 2J="3P";1I(4 i=0;i<3A;i++){2H+=2J.3N(2d.4w(2d.4m()*2J.1G))}1N 2H}$(".36").S("F",5(){$(7).4i()});$("#4j").F(5(){$(".Z").13(p);$(".4g").13(p)});$(Q).S(\'4z\',\'.v\',5(){a(1x===l){$(\'.v\').C("2L-1U","2E(20,20,20,0.0)");$(\'.v\').C("1z","3u");$(\'.v\').2g("j:2o(:2q-2w)").D();$(\'.v\').E(".A-Y-1V").D();$(\'.v\').E(".A-Y-1W").D();$(7).C("2L-1U","2E(20,20,20,0.25)");$(7).C({"1z-d":"5l","1z-2I":"4F","1z-1U":"#4R"});$(7).2g("j:2o(:2q-2w)").P();$(7).E(".A-Y-1V").P();$(7).E(".A-Y-1W").P()}});$(Q).S(\'4S\',\'.v\',5(){a(1x===l){$(7).C("2L-1U","2E(20,20,20,0.0)");$(7).C("1z","3u");$(7).2g("j:2o(:2q-2w)").D();$(7).E(".A-Y-1V").D();$(7).E(".A-Y-1W").D()}});$(".Z").F(5(){$(".1X").11(p);$(".Z").11(p)});$(1H).S("3z 2S",5(e){4 2c=$(7).I("2c");a(2c!=e.1C){4N(e.1C){3e"3z":1b.1m(0);21.1P("4Q");2r;3e"2S":a(1b){1b.1m(1n);21.1P("5h")}2r;5g:2r}}$(7).I("2c",e.1C)})});$(1H).3J(5(){$(".31").P();1e();$(".3d").11(p,5(){1e()});3w()});',62,335,'||||var|function|uid|this||dancers|if|id|share_obj|width||buzz|name|||div|flip|false|assets|||500|idx|body|attr|dancer_uid|max_depth|dance_outter|||||ui|new|css|hide|find|click|music|set|data|sound|bg_num|song_num|loaded_obj|height|true|show|document|flip_element|on|x_pct|class|y_pct|size_pct||resizable|blackout_alpha|gif_max_width|fadeOut|find_index_from_uid|fadeIn||||depth||px|new_dancer|myGroup|gif_min_width|dfont|uber_responsive|msg|ww|min_depth|dancer|bg|size_of_created_gif|dd|setVolume|global_volume|nopanties|nahnahnah|singalong|bubblebutt|fatboy|walkmen|trololo|twist|bazz|is_dragging|closest|border|backstretch|append_a_dancer|type|halffull|wegotyou|grounded|length|window|for|else|jpg|dancefloor_|dancefloors|return|501|log|clone_dancer|null|dancer_count|sounds|color|handle|se|overlay|init_default|size||console|top||||left|defaults|auto|parent|loader|position|prevType|Math|ratio|clone_x|children|2000|setTimeout|dfont2|resize|event|party|ratio_arr|not|audio_mode|first|break|offset|index|clone_w|location|child|clone_flip|100|addClass|clone_y|obj|stop|bg_max|rgba|share_uid|ajax|text|style|charset|play|background|share_obj_str|center|bback|load_share|success|gif_max_height|focus|all_draggable|json|resize_dancer|start|dataType|http|max||loading_container||url|POST|done_preload|share_url|JSON|php|local|all_dancers|error|share_id|blackout|case|playlist|split|move_dancer|ratio_txt|xPos|all_resizable|yPos|hflip|add_dancer|bfront|bring_to_front|remove_dancer|close_dancer|send_to_back|resizer|none|yy|preload_stuff|xx|nn|blur|len|youtube_playlist|120|this_domain|flip_dancer|soundcloud_playlist|gdp_new2|stringGen|push|load|draggable|preventDefault|contextmenu|charAt|scroll|abcdefghijklmnopqrstuvwxyz0123456789|addEventListener|each|absolute|outerWidth|outerHeight|center_me|fn|RESIZE|pumpgirl|smooch|||soundcloud|wormjelly|60|max_dancers|05||youtube|mode|800|600|host|href|audio|indexOf|about_container2|append|select|about|remove|splice|random|removeClass|CLONE|resize_help|src|img|gif|FLIP|BACK|FRONT|floor|addImage|is|mouseenter|blank|dancefloorswitch|there|parse|songswitch|dashed|ready|search|undefined|db_get|was|an|share|switch|select_gif|selectdancer|bye|ccc|mouseleave|footer_container|main_page|header_container|share_container|destroy|db_upd|stringify||addCompletionListener|PxLoader|gifdanceparty|share_data|formats|giphy|com|aspectRatio|minWidth|maxWidth|maxHeight|mp3|loop|ogg|res|default|hi|full_screen_container|group|autoplay|1px|preload|val|dancer_thumb'.split('|'),0,{}))
+var max_depth = 501;
+var min_depth = 500;
+var bg_num = 2;
+var bg_max = 14;
+var audio_mode = "local";
+var song_num = 1;
+var youtube_playlist = "";
+var soundcloud_playlist = "";
+var dancer_uid = 0;
+var is_dragging = false;
+var myGroup;
+var gif_max_width = 600;
+var gif_max_height = 800;
+var gif_min_width = 120;
+var this_domain = "https://" + window.location.host;
+if (window.location.href.indexOf("gdp_new2") !== -1) {
+    this_domain += "/gdp_new2/"
+}
+var dancer_count = 0;
+var global_volume = 40;
+var share_obj = {
+    "uid": null,
+    "audio-mode": audio_mode,
+    "song_num": song_num,
+    "youtube-playlist": youtube_playlist,
+    "soundcloud-playlist": soundcloud_playlist,
+    "bg_num": bg_num,
+    "dancers": [{
+        "uid": "1",
+        "name": "smooch",
+        "x_pct": 0.23,
+        "y_pct": 0.41,
+        "size_pct": 0.15,
+        "depth": 500,
+        "flip": false
+    }, {
+        "uid": "2",
+        "name": "pumpgirl",
+        "x_pct": 0.32,
+        "y_pct": 0.47,
+        "size_pct": 0.16,
+        "depth": 501,
+        "flip": false
+    }, {
+        "uid": "3",
+        "name": "wormjelly",
+        "x_pct": 0.60,
+        "y_pct": 0.30,
+        "size_pct": 0.05,
+        "depth": 501,
+        "flip": false
+    }]
+};
+function find_index_from_uid(uid) {
+    for (var i = 0; i < share_obj.dancers.length; i++) {
+        if (share_obj.dancers[i].uid == uid) {
+            return i
+        }
+    }
+    return false
+}
+function append_a_dancer(uid, name, x, y, z, w) {
+    if (dancer_count >= 24) {
+        setTimeout(function() {
+            $(".blackout_alpha").fadeIn(500);
+            $(".max_dancers").fadeIn(500)
+        }, 501)
+    } else {
+        $(".all_dancers").append("<div class='dance_outter' id='" + uid + "' style='z-index:" + z + ";top:" + y + "px;left:" + x + "px;width:auto;height:auto;'>" + "<div class='resizer' style='width:" + w + "px;height:auto;'><img class='dancer' data-flip='false' src='assets/dancers/" + name + ".gif' width='100%'></div>" + "<div class='hflip dfont'>FLIP</div><div class='bfront dfont'>FRONT</div><div class='bback dfont'>BACK</div><div class='resize_help dfont2'>RESIZE</div><div class='close_dancer dfont'>X</div><div class='clone_dancer dfont' id='" + name + "'>CLONE</div>" + "</div>");
+        $(".dfont,.dfont2").hide();
+        all_resizable();
+        all_draggable();
+        $("#" + uid).find(".ui-resizable-handle").hide();
+        $("#" + uid).find(".ui-resizable-se").hide();
+        dancer_count++
+    }
+}
+function add_dancer(name, ratio) {
+    max_depth++;
+    dancer_uid++;
+    var size_of_created_gif = ($("body").width() * 0.18) * ratio;
+    if (size_of_created_gif > gif_max_width) {
+        size_of_created_gif = gif_max_width
+    }
+    if (size_of_created_gif < gif_min_width) {
+        size_of_created_gif = gif_min_width
+    }
+    append_a_dancer(dancer_uid, name, 50, 100, max_depth, size_of_created_gif);
+    var new_dancer = {
+        "uid": dancer_uid,
+        "name": name,
+        "x_pct": null,
+        "y_pct": null,
+        "size_pct": null,
+        "depth": max_depth,
+        "flip": false
+    };
+    new_dancer.x_pct = 50 / $("body").width();
+    new_dancer.y_pct = 100 / $("body").height();
+    new_dancer.size_pct = $("#" + dancer_uid).width() / $("body").width();
+    share_obj.dancers.push(new_dancer)
+}
+function remove_dancer(uid) {
+    $("#" + uid).remove();
+    var idx = find_index_from_uid(uid);
+    share_obj.dancers.splice(idx, 1);
+    dancer_count--
+}
+function move_dancer(uid, x, y) {
+    var idx = find_index_from_uid(uid);
+    share_obj.dancers[idx].x_pct = x / $("body").width();
+    share_obj.dancers[idx].y_pct = y / $("body").height()
+}
+function send_to_back(uid) {
+    var idx = find_index_from_uid(uid);
+    min_depth--;
+    share_obj.dancers[idx].depth = min_depth;
+    $("#" + uid).css("z-index", min_depth)
+}
+function bring_to_front(uid) {
+    var idx = find_index_from_uid(uid);
+    max_depth++;
+    share_obj.dancers[idx].depth = max_depth;
+    $("#" + uid).css("z-index", max_depth)
+}
+function flip_dancer(uid) {
+    var idx = find_index_from_uid(uid);
+    var flip_element = $("#" + share_obj.dancers[idx].uid).find(".dancer");
+    if (flip_element.attr("data-flip") === "false") {
+        flip_element.addClass("flip-h");
+        flip_element.attr("data-flip", "true");
+        share_obj.dancers[idx].flip = true
+    } else {
+        flip_element.removeClass("flip-h");
+        flip_element.attr("data-flip", "false");
+        share_obj.dancers[idx].flip = false
+    }
+}
+function resize_dancer(uid, width) {
+    var idx = find_index_from_uid(uid);
+    share_obj.dancers[idx].size_pct = width / $("body").width()
+}
+function clone_dancer(name, uid) {
+    var clone_flip = $("#" + uid).find(".dancer").attr("data-flip");
+    var clone_w = $("#" + uid).width();
+    var clone_x = $("#" + uid).position().left - 40;
+    var clone_y = $("#" + uid).position().top;
+    max_depth++;
+    dancer_uid++;
+    append_a_dancer(dancer_uid, name, clone_x, clone_y, max_depth, clone_w);
+    if (clone_flip === "true") {
+        $("#" + dancer_uid).find(".dancer").addClass("flip-h");
+        $("#" + dancer_uid).find(".dancer").attr("data-flip", "true")
+    }
+    var new_dancer = {
+        "uid": dancer_uid,
+        "name": name,
+        "x_pct": clone_x / $("body").width(),
+        "y_pct": clone_y / $("body").height(),
+        "size_pct": clone_w / $("body").width(),
+        "depth": max_depth,
+        "flip": clone_flip
+    };
+    share_obj.dancers.push(new_dancer)
+}
+$.fn.center = function(x, y) {
+    this.css("position", "absolute");
+    if (x == 1) {
+        this.css("left", Math.max(0, (($(this).parent().width() - $(this).outerWidth()) / 2)) + "px")
+    }
+    if (y == 1) {
+        this.css("top", Math.max(0, (($(this).parent().height() - $(this).outerHeight()) / 2)) + "px")
+    }
+    return this
+}
+;
+function uber_responsive() {
+    $(".center_me").each(function() {
+        $(this).center(1, 1)
+    })
+}
+$(window).resize(function() {
+    uber_responsive()
+});
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault()
+}, false);
+function all_draggable() {
+    $(".dance_outter").draggable({
+        scroll: false,
+        start: function() {
+            is_dragging = true
+        },
+        stop: function(event, ui) {
+            var offset = $(this).position();
+            var xPos = offset.left;
+            var yPos = offset.top;
+            var uid = $(this).attr("id");
+            var idx = find_index_from_uid(uid);
+            move_dancer(uid, xPos, yPos);
+            is_dragging = false
+        }
+    })
+}
+function all_resizable() {
+    $(".resizer").resizable({
+        aspectRatio: true,
+        minWidth: 120,
+        maxWidth: gif_max_width,
+        maxHeight: gif_max_height,
+        resize: function(event, ui) {
+            $(this).parent().css("width", ui.size.width + "px").css("height", ui.size.height + "px")
+        },
+        stop: function(event, ui) {
+            var uid = $(this).parent().attr("id");
+            resize_dancer(uid, ui.size.width)
+        }
+    })
+}
+function preload_stuff() {
+    var loader = new PxLoader();
+    for (var i = 1; i < bg_max + 1; i++) {
+        loader.addImage('assets/dancefloors/dancefloor_' + i + '.jpg')
+    }
+    loader.addCompletionListener(function() {
+        done_preload()
+    });
+    loader.start();
+    if (audio_mode == "local") {
+        buzz.defaults.loop = true;
+        buzz.defaults.formats = ['mp3', 'ogg'];
+        buzz.defaults.preload = 'auto';
+        buzz.defaults.autoplay = false;
+        var fatboy = new buzz.sound("assets/music/fatboy");
+        fatboy.set("id", "fatboy");
+        var walkmen = new buzz.sound("assets/music/walkmen");
+        walkmen.set("id", "walkmen");
+        var nahnahnah = new buzz.sound("assets/music/nahnahnah");
+        nahnahnah.set("id", "nahnahnah");
+        var grounded = new buzz.sound("assets/music/grounded");
+        grounded.set("id", "grounded");
+        var singalong = new buzz.sound("assets/music/singalong");
+        singalong.set("id", "singalong");
+        var trololo = new buzz.sound("assets/music/trololo");
+        trololo.set("id", "trololo");
+        var bubblebutt = new buzz.sound("assets/music/bubblebutt");
+        bubblebutt.set("id", "bubblebutt");
+        var twist = new buzz.sound("assets/music/twist");
+        twist.set("id", "twist");
+        var wegotyou = new buzz.sound("assets/music/wegotyou");
+        wegotyou.set("id", "wegotyou");
+        var bazz = new buzz.sound("assets/music/bazz");
+        bazz.set("id", "bazz");
+        var halffull = new buzz.sound("assets/music/halffull");
+        halffull.set("id", "halffull");
+        var nopanties = new buzz.sound("assets/music/nopanties");
+        nopanties.set("id", "nopanties");
+        myGroup = new buzz.group([fatboy, walkmen, trololo, bubblebutt, singalong, nopanties, nahnahnah, grounded, twist, wegotyou, bazz, halffull]);
+        myGroup.setVolume(global_volume)
+    }
+    function done_preload() {
+        var o = location.search.split('o=')[1];
+        if (o && o != undefined) {
+            $.ajax({
+                type: "POST",
+                url: "db_get.php",
+                data: {
+                    share_id: o
+                },
+                dataType: "json",
+                success: function(msg) {
+                    if (msg.obj.party) {
+                        load_share(JSON.parse(msg.obj.party))
+                    } else {
+                        console.log("msg.obj.party is blank");
+                        init_default()
+                    }
+                },
+                error: function() {
+                    console.log("there was an ajax error");
+                    init_default()
+                }
+            })
+        } else {
+            init_default()
+        }
+        $(".loading_container").fadeOut(2000, function() {
+            $(".main_page").show();
+            $(".all_dancers").show();
+            $(".bg").show();
+            $(".footer_container").show();
+            $(".header_container").show();
+            $(".bg").backstretch("resize");
+            uber_responsive()
+        });
+        uber_responsive()
+    }
+}
+function init_default() {
+    for (var i = 0; i < share_obj.dancers.length; i++) {
+        max_depth++;
+        dancer_uid++;
+        var x = share_obj.dancers[i].x_pct * $("body").width();
+        var y = share_obj.dancers[i].y_pct * $("body").height();
+        var w = share_obj.dancers[i].size_pct * $("body").width();
+        if (w > gif_max_width) {
+            w = gif_max_width
+        }
+        if (w < gif_min_width) {
+            w = gif_min_width
+        }
+        var n = share_obj.dancers[i].name;
+        append_a_dancer(dancer_uid, n, x, y, max_depth, w)
+    }
+    setTimeout(function() {
+        buzz.sounds[song_num].play().setVolume(global_volume)
+    }, 2000);
+    $(".bg").backstretch("assets/dancefloors/dancefloor_" + bg_num + ".jpg")
+}
+function load_share(loaded_obj) {
+    for (var i = 0; i < loaded_obj.dancers.length; i++) {
+        max_depth++;
+        dancer_uid++;
+        var xx = loaded_obj.dancers[i].x_pct * $("body").width();
+        var yy = loaded_obj.dancers[i].y_pct * $("body").height();
+        var ww = loaded_obj.dancers[i].size_pct * $("body").width();
+        if (ww > gif_max_width) {
+            ww = gif_max_width
+        }
+        if (ww < gif_min_width) {
+            ww = gif_min_width
+        }
+        var nn = loaded_obj.dancers[i].name;
+        var dd = loaded_obj.dancers[i].depth;
+        if (dd > max_depth) {
+            max_depth = dd
+        }
+        if (dd < min_depth) {
+            min_depth = dd
+        }
+        append_a_dancer(dancer_uid, nn, xx, yy, dd, ww);
+        if (loaded_obj.dancers[i].flip === true) {
+            var flip_element = $("#" + dancer_uid).find(".dancer");
+            flip_element.addClass("flip-h");
+            flip_element.attr("data-flip", "true")
+        }
+    }
+    setTimeout(function() {
+        buzz.sounds[loaded_obj.song_num].play().setVolume(global_volume)
+    }, 2000);
+    $(".bg").backstretch("assets/dancefloors/dancefloor_" + loaded_obj.bg_num + ".jpg");
+    $(".dfont,.dfont2").hide();
+    share_obj = loaded_obj
+}
+$(document).ready(function() {
+    uber_responsive();
+    $(".blackout").show();
+    $(".blackout_alpha").hide();
+    $(".full_screen_container").hide();
+    $(".overlay").hide();
+    $(".dancer_thumb").click(function() {
+        var name = $(this).attr('id');
+        var ratio_txt = $(this).attr('data-size');
+        var ratio_arr = ratio_txt.split("x");
+        var ratio = ratio_arr[0] / ratio_arr[1];
+        add_dancer(name, ratio);
+        $(".overlay").fadeOut(500);
+        $(".blackout_alpha").fadeOut(500)
+    });
+    $(document).on('click', '.close_dancer', function() {
+        var uid = $(this).closest(".dance_outter").attr("id");
+        remove_dancer(uid)
+    });
+    $(document).on('click', '.bfront', function() {
+        var uid = $(this).closest(".dance_outter").attr("id");
+        bring_to_front(uid)
+    });
+    $(document).on('click', '.bback', function() {
+        var uid = $(this).closest(".dance_outter").attr("id");
+        send_to_back(uid)
+    });
+    $(document).on('click', '.clone_dancer', function() {
+        var name = $(this).attr("id");
+        var uid = $(this).closest(".dance_outter").attr("id");
+        clone_dancer(name, uid)
+    });
+    $(document).on('click', '.hflip', function() {
+        var uid = $(this).closest(".dance_outter").attr("id");
+        flip_dancer(uid)
+    });
+    $("#songswitch").click(function() {
+        song_num++;
+        if (song_num > buzz.sounds.length - 1) {
+            song_num = 0
+        }
+        myGroup.stop();
+        buzz.sounds[song_num].play().setVolume(global_volume);
+        share_obj.song_num = song_num
+    });
+    $("#dancefloorswitch").click(function() {
+        bg_num++;
+        if (bg_num > bg_max) {
+            bg_num = 1
+        }
+        $(".bg").backstretch("destroy", false);
+        $(".bg").backstretch("assets/dancefloors/dancefloor_" + bg_num + ".jpg");
+        share_obj.bg_num = bg_num
+    });
+    $("#selectdancer").click(function() {
+        $(".blackout_alpha").fadeIn(500);
+        $(".select_gif").fadeIn(500)
+    });
+    $("#share").click(function() {
+        $(".blackout_alpha").fadeIn(500);
+        $(".share_container").fadeIn(500);
+        var share_uid = stringGen(8);
+        var share_obj_str = JSON.stringify(share_obj);
+        $.ajax({
+            type: "POST",
+            url: "db_upd.php",
+            data: {
+                share_id: share_uid,
+                share_data: share_obj_str
+            },
+            dataType: "json",
+            success: function(msg) {
+                if (msg.res === true) {
+                    $(".share_url").val("https://thetoonsofjosh.github.io/gifdanceparty/?o=" + share_uid)
+                } else {
+                    $(".overlay").fadeOut(500);
+                    $(".blackout_alpha").fadeOut(500)
+                }
+            }
+        })
+    });
+    function stringGen(len) {
+        var text = "";
+        var charset = "abcdefghijklmnopqrstuvwxyz0123456789";
+        for (var i = 0; i < len; i++) {
+            text += charset.charAt(Math.floor(Math.random() * charset.length))
+        }
+        return text
+    }
+    $(".share_url").on("click", function() {
+        $(this).select()
+    });
+    $("#about").click(function() {
+        $(".blackout_alpha").fadeIn(500);
+        $(".about_container2").fadeIn(500)
+    });
+    $(document).on('mouseenter', '.dance_outter', function() {
+        if (is_dragging === false) {
+            $('.dance_outter').css("background-color", "rgba(20,20,20,0.0)");
+            $('.dance_outter').css("border", "none");
+            $('.dance_outter').children("div:not(:first-child)").hide();
+            $('.dance_outter').find(".ui-resizable-handle").hide();
+            $('.dance_outter').find(".ui-resizable-se").hide();
+            $(this).css("background-color", "rgba(20,20,20,0.25)");
+            $(this).css({
+                "border-width": "1px",
+                "border-style": "dashed",
+                "border-color": "#ccc"
+            });
+            $(this).children("div:not(:first-child)").show();
+            $(this).find(".ui-resizable-handle").show();
+            $(this).find(".ui-resizable-se").show()
+        }
+    });
+    $(document).on('mouseleave', '.dance_outter', function() {
+        if (is_dragging === false) {
+            $(this).css("background-color", "rgba(20,20,20,0.0)");
+            $(this).css("border", "none");
+            $(this).children("div:not(:first-child)").hide();
+            $(this).find(".ui-resizable-handle").hide();
+            $(this).find(".ui-resizable-se").hide()
+        }
+    });
+    $(".blackout_alpha").click(function() {
+        $(".overlay").fadeOut(500);
+        $(".blackout_alpha").fadeOut(500)
+    });
+    $(window).on("blur focus", function(e) {
+        var prevType = $(this).data("prevType");
+        if (prevType != e.type) {
+            switch (e.type) {
+            case "blur":
+                myGroup.setVolume(0);
+                console.log("bye");
+                break;
+            case "focus":
+                if (myGroup) {
+                    myGroup.setVolume(global_volume);
+                    console.log("hi")
+                }
+                break;
+            default:
+                break
+            }
+        }
+        $(this).data("prevType", e.type)
+    })
+});
+$(window).load(function() {
+    $(".loading_container").show();
+    uber_responsive();
+    $(".blackout").fadeOut(500, function() {
+        uber_responsive()
+    });
+    preload_stuff()
+});
