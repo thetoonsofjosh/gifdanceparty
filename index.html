@@ -1,27 +1,25 @@
-
-
 <!DOCTYPE html>  <!-- HTML5 -->
   
 <head>
 
-  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>GIF DANCE PARTY</title>
 
-  <script type="text/javascript">
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    window.location = "/nomobile.html";
+  <script src="js/bowser.min.js"></script>
+  <script>
+  if(bowser.windowsphone || bowser.android || bowser.ios || bowser.iphone || bowser.ipod || bowser.ipad){
+    location.href = "http://gifdanceparty.giphy.com/nomobile.html";
   }
   </script>
-
   <!-- google font -->  
-  <link href='https://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>
   <!-- my CSS -->
   <link rel="stylesheet" type="text/css" href="style.css">
   <!-- jquery -->
-  <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
   <!-- jquery UI -->
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.2/themes/vader/jquery-ui.css" />
-  <script src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/vader/jquery-ui.css" />
+  <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
   <!-- backstretch -->
   <script src="js/jquery.backstretch.js"></script> 
   <script type="text/javascript" src="js/jquery.anystretch.min.js"></script>
@@ -34,16 +32,31 @@
   <!-- sharing stuff -->
   <script type="text/javascript" src="js/underscore-min.js"></script>
   <script type="text/javascript" src="js/jquery.ba-bbq.min.js"></script>
-  <!-- meta -->
-	<meta name="title" content="GIF DANCE PARTY" />
-	<meta name="description" content="Come join the party!" />
-	<link rel="image_src" href="dancers/pumpgirl.gif" />
+
   <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- META META META -->
+    <meta name="description" content="The best party on the internet!" />
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="GIF DANCE PARTY">
+    <meta itemprop="description" content="The best party on the internet!">
+    <meta itemprop="image" content="http://gifdanceparty.giphy.com/img/gdp_cover.jpg">
+    <!-- Twitter Card data -->
+    <meta name="twitter:title" content="GIF DANCE PARTY">
+    <meta name="twitter:description" content="The best party on the internet!">
+    <meta name="twitter:image" content="http://fuzzy.cc/gdp_new_version/img/gdp_cover.jpg">
+    <meta name="twitter:image:src" content="http://gifdanceparty.giphy.com/img/gdp_cover.jpg">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="GIF DANCE PARTY" />
+    <meta property="og:image" content="http://gifdanceparty.giphy.com/img/gdp_cover.jpg" />
+    <meta property="og:description" content="The best party on the internet!" />
 
 </head>
   
 <body>
 
+
+  <div id="blackout"></div>
 
   <!-- LOADING -->
   <div id="modal_loading">
@@ -84,12 +97,7 @@
 
       <!-- share -->
       <div class="menu_item" style="margin-left:25px;color:#f54848;" >
-        <span id="share" class="menu_hover modal_open">SHARE YOUR PARTY</span>
-      </div>
-
-      <!-- submit -->
-      <div class="menu_item" style="margin-left:25px;color:#00ffba;" >
-        <span id="submit" class="menu_hover modal_open">SUBMIT</span>
+        <span id="share" class="menu_hover modal_open">SHARE YOUR PARTY!</span>
       </div>
 
        <!-- about -->
@@ -100,18 +108,21 @@
     </center>
     </div>
 
+    <div id="installation"><a href="http://www.gifdanceparty.com"><img src="img/check_out.png" width="220"></a></div>
+    <div id="installation2"><img src="img/frog_left.gif" width="55"></div>
 
 
     <!-- DANCERS -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <div id="dancers"></div>
 
-
+    <!-- MODAL BG -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="modal_bg"></div>
 
     <!-- MODAL SELECT SONG -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <div class="modal" id="modal_select_song" style="width:200px;">
-      <div class="close_modal"><b>X</b></div>
       <div class="song_list" id=""><i>NO MUSIC</i></div>
       <div class="song_list" id="twist">TWIST</div>
       <div class="song_list" id="grounded">GROUNDED</div>
@@ -147,7 +158,6 @@
       <div class="dancer_thumb" id="carlton"><img src="dancers_thumbs/carlton.png" width="100"></div>
       <div class="dancer_thumb" id="charlie"><img src="dancers_thumbs/charlie.png" width="100"></div>
       <div class="dancer_thumb" id="chicken"><img src="dancers_thumbs/chicken.png" width="100"></div>
-      <div class="dancer_thumb" id="cow"><img src="dancers_thumbs/cow.png" width="100"></div>
       <div class="dancer_thumb" id="discoball"><img src="dancers_thumbs/discoball.png" width="100"></div>
       <div class="dancer_thumb" id="cowboy"><img src="dancers_thumbs/cowboy.png" width="100"></div>
       <div class="dancer_thumb" id="doggy"><img src="dancers_thumbs/doggy.png" width="100"></div>
@@ -186,12 +196,9 @@
       <div class="dancer_thumb" id="pa"><img src="dancers_thumbs/pa.png" width="100"></div>
       <div class="dancer_thumb" id="patrick"><img src="dancers_thumbs/patrick.png" width="100"></div>
       <div class="dancer_thumb" id="pedopickle"><img src="dancers_thumbs/pedopickle.png" width="100"></div>
-      <div class="dancer_thumb" id="penguin"><img src="dancers_thumbs/penguin.png" width="100"></div>
-      <div class="dancer_thumb" id="pika"><img src="dancers_thumbs/pika.png" width="100"></div>
       <div class="dancer_thumb" id="pilboy"><img src="dancers_thumbs/pilboy.png" width="100"></div>
       <div class="dancer_thumb" id="pixelly"><img src="dancers_thumbs/pixelly.png" width="100"></div>
       <div class="dancer_thumb" id="pizza"><img src="dancers_thumbs/pizza.png" width="100"></div>
-      <div class="dancer_thumb" id="pony"><img src="dancers_thumbs/pony.png" width="100"></div>
       <div class="dancer_thumb" id="ponyshuffle"><img src="dancers_thumbs/ponyshuffle.png" width="100"></div>
       <div class="dancer_thumb" id="possum"><img src="dancers_thumbs/possum.png" width="100"></div>
       <div class="dancer_thumb" id="pretzel"><img src="dancers_thumbs/pretzel.png" width="100"></div>
@@ -221,21 +228,23 @@
       <div class="dancer_thumb" id="whiteguy"><img src="dancers_thumbs/whiteguy.png" width="100"></div>
       <div class="dancer_thumb" id="wormlady"><img src="dancers_thumbs/wormlady.png" width="100"></div>
       <div class="dancer_thumb" id="yeti"><img src="dancers_thumbs/yeti.png" width="100"></div>
+      <div class="dancer_thumb" id="cact"><img src="dancers_thumbs/cact.png" width="100"></div>
+      <div class="dancer_thumb" id="babe"><img src="dancers_thumbs/babe.png" width="100"></div>
+      <div class="dancer_thumb" id="slappy"><img src="dancers_thumbs/slappy.png" width="100"></div>
+      <div class="dancer_thumb" id="ghosty"><img src="dancers_thumbs/ghosty.png" width="100"></div>
     </div>
 
     <!-- MODAL UPLOAD BG IMAGE -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <div class="modal" id="modal_upload"> <!-- !!! -->
-      <div class="close_modal"><b>X</b></div>
       UPLOAD A BACKGROUND IMAGE
-
         <form id="submit_background_form" action="ajax/upload_background_image.php" method="post" enctype="multipart/form-data">
           <div style="height:10px">&nbsp;</div>
-          FILE (ONLY SMALL IMAGES)
+          File (Max 3MB)
           <div style="height:10px">&nbsp;</div>
           <input type="file" name="file" id="file" class="submit_background_input">
           <input type="hidden" name="bg">
-          <input type="hidden" name="token" value="19d84e90716686c40b528a215f211b07">
+          <input type="hidden" name="token" value="93471647e29a3c3fe1814e4c3c086543">
           <div style="height:10px">&nbsp;</div>
           <button type='button' class="submit_background_button"> SUBMIT </button>
           <div id="form_response" style="margin-top:10px;"></div>
@@ -246,31 +255,19 @@
     <!-- MODAL ABOUT -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <div class="modal" id="modal_about">
-      <div class="close_modal"><b>X</b></div>
-      CREATED MARCH 2013
-      <div style="height:10px">&nbsp;</div>
-      BY <a href="https://fuzzywobble.com" target="_blank">FUZZY WOBBLE</a> 
-      WITH HELP FROM <a href="https://www.banditbrandit.com/" target="_blank">PATRICK BRANDT</a> 
-      <div style="height:10px">&nbsp;</div>
-      FOR THE 'HUMOR & CODE' CLASS AT PARSONS SCHOOL OF DESIGN & TECHNOLGOY
-    </div>
-
-    <!-- MODAL SUBMIT -->
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="modal" id="modal_submit">
-      <div class="close_modal"><b>X</b></div>
-      ANYONE CAN SUBMIT A <u>DANCE GIF</u> AND JOIN THE GIF DANCE PARTY
-      <div style="height:10px">&nbsp;</div>
-      SUBMIT TO <span style='color:#00ffba;'>GIFPOW@GMAIL.COM</span>
-      <div style="height:10px">&nbsp;</div>
-      ONLY GIFS WITH TRANSPARENT BACKGROUNDS AND FULL BODIES WILL BE USED
+      GIF DANCE PARTY WAS IMAGINED AND CREATED BY <a href="http://fuzzywobble.com" target="_blank">FUZZY WOBBLE</a>  
+      ON MARCH 2013 FOR THE 'HUMOR & CODE' CLASS
+      AT THE PARSONS SCHOOL OF DESIGN & TECHNOLGOY. SINCE THEN IT HAS HAD MILLIONS OF HITS AND HAS
+      BEEN ENJOYED BY ALMOST EVERY COUNTRY ON THE PLANET. SPECIAL THANKS TO <a href="http://www.banditbrandit.com/" target="_blank">PATRICK BRANDT</a> 
+      FOR HELP WITH SOME OF THE CODE! AND THANKS TO <a href="https://www.behance.net/sylviadesign377c88" target="_blank">BOOMER</a> FOR 
+      TEDIOUSLY REMOVING THE BACKGROUNDS FRAME-BY-FRAME BACK IN EARLY '13 WHEN TRANSPARENT DANCE GIFS WERE NOT A THING.
+      WE HAVE NOW TURNED THIS INTO AN <a href="http://www.gifdanceparty.com/">IRL INSTALLATION</a> WITH 3D CAMERAS AND LOTS OF C++.
     </div>
 
     <!-- MODAL SHARE -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="modal" id="modal_share" style="width:390px;">
-      <div class="close_modal"><b>X</b></div>    
-      Your party URL:
+    <div class="modal" id="modal_share" style="width:390px;">  
+      <center>Your party URL</center>
       <div style="height:10px;"></div>
       <input type="text" id="input_shareURL">
       <button id="copy_button" data-clipboard-text="">COPY</button>
@@ -281,16 +278,16 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <div id="fuzzy_footer">
-        <a href="https://giphy.com">
-          <img src="logo_300w_horizontal.png" width="120" />
+        <a href="http://giphy.com">
+          <img src="https://s3.amazonaws.com/giphymedia/gifdanceparty/logo_300w_horizontal.png" width="120" />
         </a>
         <div style="height:4px;"></div>
         <span style="background-color:rgba(0,0,0,0.4);">
-          <a href="https://giphy.com">Giphy</a> presents <a href="/">GIF DANCE PARTY</a>
+          <a href="http://giphy.com">Giphy</a> presents <b>GIF DANCE PARTY</b>
         </span>
         <div style="height:2px;"></div>
         <span style="background-color:rgba(0,0,0,0.4);">
-          Created by <a href='https://fuzzywobble.com' target='_blank'>Fuzzy Wobble</a> &copy; 2014
+          Created by <a href='http://fuzzywobble.com' target='_blank'>Fuzzy Wobble</a>
         </span>
     </div>
 
@@ -301,7 +298,7 @@
 
         (function() {
          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
          })();
     </script>
@@ -310,6 +307,9 @@
 
 </body>
 
-<script src="myJS.js"></script> 
+  <script>
+  var sharePath = "https://thetoonsofjosh.github.io/gifdanceparty/";
+  </script>
+  <script src="myJS.js"></script> 
 
 </html>
