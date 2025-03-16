@@ -1,0 +1,387 @@
+
+
+/* _______________________________________________________________ */
+/* GLOBAL ________________________________________________________ */
+body,html{
+	margin:0px;padding:0px;
+	min-width:750px;
+	width:100%;height:100%;
+	overflow:hidden;
+	color:#fff;
+	background-color:#000;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+textarea:focus,input:focus{outline:0;}
+table{border-collapse:collapse;}
+th,td{padding:0;}
+a:link {color: #fff;}
+a:visited {color: #fff;}
+a:hover {
+	-webkit-animation: rainbow_text0.5s infinite alternate;
+	-moz-animation: rainbow_text 0.5s infinite alternate;
+	animation: rainbow_text 0.5s infinite alternate;
+}
+a:active {color: #fff;}
+.rel{
+	position:relative;
+	width:100%;height:100%;
+}
+.full_screen_container,.overlay{
+	width:100%;height:100%;
+	position:absolute;
+	left:0px;top:0px;
+}
+.blackout{
+	width:100%;height:100%;
+	position:absolute;
+	left:0px;top:0px;
+	background-color:#000;
+	z-index:5000;
+}
+.blackout_alpha{
+	width:100%;height:100%;
+	position:absolute;
+	left:0px;top:0px;
+	background-color:rgba(0,0,0,0.86);
+	z-index:3999;	
+	cursor:alias;
+}
+.center_me{
+	width:auto;height:auto;
+	position:absolute;
+}
+.bg{
+	min-width:750px;
+	position:absolute;
+	width:100%;height:100%;
+	margin-top:45px;
+	z-index:1999;
+}
+.all_dancers{
+	min-width:750px;
+	position:absolute;
+	width:100%;height:100%;
+	margin-top:45px;
+	background:none;
+	z-index:2000;
+}
+
+
+/* _______________________________________________________________ */
+/* PASSWORD PAGE _________________________________________________ */
+.password_container{
+	background-color: #fff;
+	color:#444;
+	background-image: url('assets/imgs/anim_tile_confetti.gif');
+}
+.pw_text{
+	font-size:30px;
+	padding:10px;
+	width: 300px;
+	color:#ccc;
+	text-align: center;
+	border:2px solid #ccc;
+	background:none;
+}
+.pw_response{
+	font-size:16px;
+	color:#f00;
+}
+.banana1{
+	position:absolute;
+	z-index:1000;
+	bottom:5px;left:4px;
+}
+.alien1{
+	position:absolute;
+	z-index:1000;
+	bottom:5px;right:7px;
+}
+.edelman_eyes{
+	color:#444;
+	font-size:16px;
+}
+
+
+/* _______________________________________________________________ */
+/* LOADING PAGE __________________________________________________ */
+.password_container{
+	background-color: #fff;
+	color:#444;
+	background-image: url('assets/imgs/anim_tile_confetti.gif');
+}
+.loading_text{
+	color:#ddd;
+	font-size:14px;
+	font-weight:300;
+}
+
+
+/* _______________________________________________________________ */
+/* FOOTER ________________________________________________________ */
+@-webkit-keyframes rainbow_text {
+	0% {color: hsl(354, 100%, 50%);}
+	15% {color: hsl(300, 100%, 50%);}
+	30% {color: hsl(255, 100%, 50%);}
+	45% {color: hsl(212, 100%, 50%);}
+	60% {color: hsl(172, 100%, 50%);}
+	75% {color: hsl(130, 100%, 50%);}
+	90% {color: hsl(55, 100%, 50%);}
+	100% {color: hsl(21, 100%, 50%);}
+}
+@-moz-keyframes rainbow_text {
+	0% {color: hsl(354, 100%, 50%);}
+	15% {color: hsl(300, 100%, 50%);}
+	30% {color: hsl(255, 100%, 50%);}
+	45% {color: hsl(212, 100%, 50%);}
+	60% {color: hsl(172, 100%, 50%);}
+	75% {color: hsl(130, 100%, 50%);}
+	90% {color: hsl(55, 100%, 50%);}
+	100% {color: hsl(21, 100%, 50%);}
+}
+.footer_container{
+	position:absolute;
+	right:0px;bottom:0px;
+	width:100%;height:auto;
+	background:none;
+	z-index:2005;	
+}
+.frog_corner{
+	position:absolute;
+	right:0px;bottom:0px;
+}
+.about_container{
+	position:absolute;
+	right:74px;bottom:5px;	
+}
+.about_gdp{
+	font-weight:300;
+	font-size:12px;
+	background-color:rgba(0,0,0,0.5);
+	color:#aaa;
+}
+.rainbowtxt{
+	font-weight:300;
+	font-size:12px;
+	-webkit-animation: rainbow_text 1.0s infinite alternate;
+	-moz-animation: rainbow_text 1.0s infinite alternate;
+	animation: rainbow_text 1.0s infinite alternate;
+}
+.fuzzy_footer{
+	position: absolute;
+	z-index: 2005;
+	left:10px;bottom:10px;
+	font-size:11px;
+	color:#eee;
+	opacity:0.7;filter:alpha(opacity=70);
+}
+
+/* _______________________________________________________________ */
+/* HEADER ________________________________________________________ */
+.header_container{
+	min-width:750px;
+	position:absolute;
+	width:100%;height:45px;
+	background-color:#000;
+	text-align:center;
+	z-index:2001;
+}
+.menu_item{
+	display:inline-block;
+	width:auto;
+	font-family:'Lilita One',cursive;
+	font-size:22px;
+	margin-top:10px;
+	background-color: #000;
+}
+.menu_hover{
+	cursor: pointer;
+}
+.menu_hover:hover{
+	color:#fff;
+}
+.fb{
+	position:fixed;
+	z-index:5000;
+	top:12px;left:12px;
+	opacity:0.6;
+	cursor:pointer;
+	width:auto;height:auto;
+}
+.fb:hover{
+	opacity:0.9;
+}
+
+
+
+
+/* _______________________________________________________________ */
+/* DANCER ________________________________________________________ */
+.dance_outter{
+	position:fixed;
+	width:auto;height:auto;
+	background-color:rgba(0,0,0,0.0);
+	border:none;
+	cursor:move;
+}
+.dancer{}
+.dfont{
+	font-family: 'Ubuntu', sans-serif;
+	font-size:11px;
+	font-weight:300;
+	color: #ccc;
+	cursor: pointer;
+}
+.dfont:hover{
+	color: #fcff00;
+}
+.dfont2{
+	font-family: 'Ubuntu', sans-serif;
+	font-size:11px;
+	font-weight:300;
+	color: #ccc;
+}
+.resize_help{
+	position: absolute;
+	right: 17px;bottom: 3px;
+}
+.bfront{
+	position: absolute;
+	right: 5px;top: 3px;
+}
+.bback{
+	position: absolute;
+	right: 45px;top: 3px;
+}
+.hflip{
+	position: absolute;
+	right: 80px;top: 3px;
+}
+.close_dancer{
+	position: absolute;
+	left: 5px;top: 3px;
+}
+.clone_dancer{
+	position: absolute;
+	left: 5px;bottom: 3px;
+}
+.flip-h{
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+}
+
+
+
+/* _______________________________________________________________ */
+/* SHARE _________________________________________________________ */
+.share_container{
+	width:auto;height:auto;
+	position:absolute;
+	z-index: 4000;
+	font-size:18px;
+}
+.share_text{
+	font-size:16px;
+	color:#fff;
+	font-weight:300;
+}
+.share_url{
+	font-size:28px;
+	padding:7px;
+	width: 500px;
+	background-color: #000;
+	border:3px solid #999;
+	-webkit-animation: rainbow_text 1.0s infinite alternate;
+	-moz-animation: rainbow_text 1.0s infinite alternate;
+	animation: rainbow_text 1.0s infinite alternate;
+	text-align: center;
+}
+*::selection {
+  background: #f2f851;
+  color: #000;
+}
+*::-moz-selection {
+  background: #f2f851;
+  color: #000;
+}
+
+/* _______________________________________________________________ */
+/* SHARE _________________________________________________________ */
+.max_dancers{
+	width:auto;height:auto;
+	position:absolute;
+	z-index: 4000;
+	font-family: 'Ubuntu', sans-serif;
+	-webkit-animation: rainbow_text 1.0s infinite alternate;
+	-moz-animation: rainbow_text 1.0s infinite alternate;
+	animation: rainbow_text 1.0s infinite alternate;
+	font-size: 28px;
+	color:#fff;
+}
+
+
+/* _______________________________________________________________ */
+/* SELECT DANCERS ________________________________________________ */
+.select_gif{
+	width:472px;height:auto;
+	padding:absolute;	
+	z-index: 4000;
+}
+.select_dancer_container{
+	width:100%;height:400px;
+	padding:5px;
+	overflow-y:scroll;
+}
+.dancer_thumb{
+	border:2px solid #000;
+	display:block;
+	float:left;
+	background-color:rgba(160,160,160,0.4);
+	padding:0px;
+	margin:3px;
+	width: 100px;
+	height:100px;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 50px;
+}
+.dancer_thumb:hover{
+	background-color: #fff;
+}
+.select_tab{
+	width:100%;height:auto;
+	padding-top:8px;padding-bottom:8px;
+	background-color:#000;
+	text-align:center;
+	color:#fff;
+	font-size:22px;
+	font-family:'Lilita One',cursive;
+	cursor:pointer;
+}
+.select_tab_selected{
+	background-color:#fff;
+	color:#000;
+}
+
+/* _______________________________________________________________ */
+/* ABOUT ________________________________________________ */
+.about_container2{
+	width:560px;height:auto;
+	position:absolute;
+	z-index: 4000;	
+	font-size: 18px;
+	line-height: 26px;
+	color:#fff;
+}
+
