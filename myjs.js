@@ -237,6 +237,12 @@ function preload_stuff() {
         walkmen.set("id", "walkmen");
         var nahnahnah = new buzz.sound("assets/music/nahnahnah");
         nahnahnah.set("id", "nahnahnah");
+        var sandstorm = new buzz.sound("assets/music/sandstorm");
+        sandstorm.set("id", "sandstorm");
+        var Taylor_shake_it_off = new buzz.sound("assets/music/Taylor_shake_it_off");
+        Taylor_shake_it_off.set("id", "Taylor_shake_it_off");
+        var heman = new buzz.sound("assets/music/heman");
+        heman.set("id", "heman");
         var oakenfold = new buzz.sound("assets/music/oakenfold");
         oakenfold.set("id", "oakenfold");
         var grounded = new buzz.sound("assets/music/grounded");
@@ -245,6 +251,8 @@ function preload_stuff() {
         singalong.set("id", "singalong");
         var trololo = new buzz.sound("assets/music/trololo");
         trololo.set("id", "trololo");
+        var breadfish = new buzz.sound("assets/music/breadfish");
+        breadfish.set("id", "breadfish");
         var bubblebutt = new buzz.sound("assets/music/bubblebutt");
         bubblebutt.set("id", "bubblebutt");
         var twist = new buzz.sound("assets/music/twist");
@@ -255,9 +263,11 @@ function preload_stuff() {
         bazz.set("id", "bazz");
         var halffull = new buzz.sound("assets/music/halffull");
         halffull.set("id", "halffull");
+        var hotlineloop = new buzz.sound("assets/music/hotlineloop");
+        hotlineloop.set("id", "hotlineloop");
         var nopanties = new buzz.sound("assets/music/nopanties");
         nopanties.set("id", "nopanties");
-        myGroup = new buzz.group([fatboy, walkmen, trololo, bubblebutt, singalong, nopanties, nahnahnah, oakenfold, grounded, twist, wegotyou, bazz, halffull]);
+        myGroup = new buzz.group([fatboy, walkmen, trololo, bubblebutt, singalong, nopanties, nahnahnah, oakenfold, grounded, twist, wegotyou, bazz, halffull, hotlineloop, sandstorm, heman, Taylor_shake_it_off, breadfish]);
         myGroup.setVolume(global_volume)
     }
     function done_preload() {
