@@ -67,7 +67,6 @@ function append_a_dancer(uid, name, x, y, z, w) {
         $("#" + uid).find(".ui-resizable-handle").hide();
         $("#" + uid).find(".ui-resizable-se").hide();
         dancer_count++
-    }
 }
 function add_dancer(name, ratio) {
     max_depth++;
