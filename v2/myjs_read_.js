@@ -59,7 +59,7 @@ var ALL_DANCERS = [
 { name: "hipdog", artist: "", category: "" },
 { name: "honeybooboo", artist: "", category: "irl" },
 { name: "hotdog", artist: "", category: "" },
-//{ name: "humpery", artist: "", category: "" },
+{ name: "humpery", artist: "", category: "" },
 { name: "internetparty", artist: "", category: "overlay" },
 // { name: "iralph1", artist: "", category: "irl" },
 { name: "isthisdani", artist: "", category: "irl" },
@@ -185,7 +185,7 @@ var ALL_SONGS = [
 	{name:"gdp_halffull.mp3"},
 	{name:"gdp_nopanties.mp3"},
 	{name:"gdp_walkmen.mp3"},
-	//{name:"gdp_money2.mp3"},
+	{name:"gdp_money2.mp3"},
 	{name:"gdp_spiltmilk.mp3"},
 	{name:"gdp_bubblebutt.mp3"},
 	{name:"gdp_nahnah.mp3"},
@@ -396,7 +396,7 @@ function init_default(){
 	var bw = parseInt($("body").width());
 	var bh = parseInt($("body").height());
 	add_a_dancer("makeitrain","", 0.41*bw, 0.41*bh, 501, 0.18*bw, true);
-	//add_a_dancer("pixelbabes","", 0.33*bw, 0.28*bh, 502, 0.36*bw, true);
+	add_a_dancer("pixelbabes","", 0.33*bw, 0.28*bh, 502, 0.36*bw, true);
 	add_a_dancer("ned","", 0.08*bw, 0.45*bh, 503, 0.29*bw, true);
 	add_a_dancer("baldi","", 0.67*bw, 0.41*bh, 504, 0.26*bw, true);
 	max_depth = 505;
@@ -574,7 +574,7 @@ function preload(){
 	buzz.defaults.formats = ['mp3'];
 	buzz.defaults.preload = 'auto';
 	buzz.defaults.autoplay = false;
-	//var money = new buzz.sound("music/gdp_money2"); money.set("id","money");
+	var money = new buzz.sound("music/gdp_money2"); money.set("id","money");
 	var spiltmilk = new buzz.sound("music/spilt_milk_neighbor_128"); spiltmilk.set("id","spiltmilk");
 	var singalong = new buzz.sound("music/gdp_singalong"); singalong.set("id","singalong");
 	var rex = new buzz.sound("music/rex_the_dog_128"); rex.set("id","rex");
@@ -582,8 +582,7 @@ function preload(){
 	var halffull = new buzz.sound("music/gdp_halffull"); halffull.set("id","halffull");
 	var nopanties = new buzz.sound("music/gdp_nopanties"); nopanties.set("id","nopanties");
 	var walkmen = new buzz.sound("music/gdp_walkmen"); walkmen.set("id","walkmen");
-	//myGroup = new buzz.group([rex,money,walkmen,whitehorse,spiltmilk,singalong,nopanties,halffull]); 
-	myGroup = new buzz.group([rex,walkmen,whitehorse,spiltmilk,singalong,nopanties,halffull]); 
+	myGroup = new buzz.group([rex,money,walkmen,whitehorse,spiltmilk,singalong,nopanties,halffull]); 
 
 	myGroup.setVolume(global_volume);
 	
