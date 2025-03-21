@@ -237,6 +237,8 @@ function preload_stuff() {
         walkmen.set("id", "walkmen");
         var nahnahnah = new buzz.sound("assets/music/nahnahnah");
         nahnahnah.set("id", "nahnahnah");
+        var oakenfold = new buzz.sound("assets/music/oakenfold");
+        oakenfold.set("id", "oakenfold");
         var grounded = new buzz.sound("assets/music/grounded");
         grounded.set("id", "grounded");
         var singalong = new buzz.sound("assets/music/singalong");
@@ -255,7 +257,7 @@ function preload_stuff() {
         halffull.set("id", "halffull");
         var nopanties = new buzz.sound("assets/music/nopanties");
         nopanties.set("id", "nopanties");
-        myGroup = new buzz.group([fatboy, walkmen, trololo, bubblebutt, singalong, nopanties, nahnahnah, grounded, twist, wegotyou, bazz, halffull]);
+        myGroup = new buzz.group([fatboy, walkmen, trololo, bubblebutt, singalong, nopanties, nahnahnah, oakenfold, grounded, twist, wegotyou, bazz, halffull]);
         myGroup.setVolume(global_volume)
     }
     function done_preload() {
