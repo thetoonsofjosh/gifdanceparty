@@ -61,7 +61,6 @@ var ALL_DANCERS = [
 { name: "hotdog", artist: "", category: "" },
 { name: "humpery", artist: "", category: "" },
 { name: "internetparty", artist: "", category: "overlay" },
-// { name: "iralph1", artist: "", category: "irl" },
 { name: "isthisdani", artist: "", category: "irl" },
 { name: "italiandisco", artist: "", category: "" },
 { name: "jankeyguy", artist: "", category: "" },
