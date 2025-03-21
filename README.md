@@ -7,5 +7,37 @@ Check version 1 here https://thetoonsofjosh.github.io/gifdanceparty/v1/
 
 It's almost complete, just with a few missing gifs.
 
+Here's a list of gifs I'm missing
+- breakout.gif
+- celery.gif
+- deadpool.gif
+- furball.gif
+- girlstep.gif
+- glitchtwist.gif
+- glowstix.gif
+- ladytroll.gif
+- mino.gif
+- morpher.gif
+- nopanties.gif
+- nudeflames.gif
+- oldstep.gif
+- orc.gif
+- penguin.gif
+- psych.gif
+- psypsy.gif
+- roboguy.gif
+- shark.gif
+- sheep.gif
+- sonofgod.gif
+- squidglamor.gif
+- stripper2.gif
+- stripper3.gif
+- stripperinblack.gif
+- troll.gif
+- wowsa.gif
+- zombie.gif
+
 # Version 2
 Check version 2 here https://thetoonsofjosh.github.io/gifdanceparty/v2/
+
+It's complete, everything's on here.
