@@ -60,12 +60,6 @@ function find_index_from_uid(uid) {
     return false
 }
 function append_a_dancer(uid, name, x, y, z, w) {
-    if (dancer_count >= 24) {
-        setTimeout(function() {
-            $(".blackout_alpha").fadeIn(500);
-            $(".max_dancers").fadeIn(500)
-        }, 501)
-    } else {
         $(".all_dancers").append("<div class='dance_outter' id='" + uid + "' style='z-index:" + z + ";top:" + y + "px;left:" + x + "px;width:auto;height:auto;'>" + "<div class='resizer' style='width:" + w + "px;height:auto;'><img class='dancer' data-flip='false' src='assets/dancers/" + name + ".gif' width='100%'></div>" + "<div class='hflip dfont'>FLIP</div><div class='bfront dfont'>FRONT</div><div class='bback dfont'>BACK</div><div class='resize_help dfont2'>RESIZE</div><div class='close_dancer dfont'>X</div><div class='clone_dancer dfont' id='" + name + "'>CLONE</div>" + "</div>");
         $(".dfont,.dfont2").hide();
         all_resizable();
