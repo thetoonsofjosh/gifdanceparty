@@ -18,7 +18,6 @@ Here's a list of gifs I'm missing
 - nopanties.gif
 - nudeflames.gif
 - oldstep.gif
-- psych.gif
 - psypsy.gif
 - roboguy.gif
 - sonofgod.gif
