@@ -9,7 +9,6 @@ It's almost complete, just with a few missing gifs.
 
 Here's a list of gifs I'm missing
 - furball.gif
-- fuzzball.gif
 - girlstep.gif
 - glitchtwist.gif
 - morpher.gif
