@@ -17,7 +17,6 @@ Here's a list of gifs I'm missing
 - psypsy.gif
 - roboguy.gif
 - sonofgod.gif
-- squidglamor.gif
 - wowsa.gif
   
 # Version 2
