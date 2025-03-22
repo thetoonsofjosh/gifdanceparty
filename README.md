@@ -8,7 +8,6 @@ Check version 1 here https://thetoonsofjosh.github.io/gifdanceparty/v1/
 It's almost complete, just with a few missing gifs.
 
 Here's a list of gifs I'm missing
-- celery.gif
 - furball.gif
 - fuzzball.gif
 - girlstep.gif
