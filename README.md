@@ -8,11 +8,6 @@ Check version 1 here https://thetoonsofjosh.github.io/gifdanceparty/v1/
 It's almost complete, just with a few missing gifs.
 
 Here's a list of gifs I'm missing
-- girlstep.gif
-- glitchtwist.gif
-- morpher.gif
-- nopanties.gif
-- nudeflames.gif
 - roboguy.gif
 - sonofgod.gif
 - wowsa.gif
