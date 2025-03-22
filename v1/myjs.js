@@ -3,7 +3,7 @@ var min_depth = 500;
 var bg_num = 2;
 var bg_max = 22;
 var audio_mode = "local";
-var song_num = 1;
+var song_num = 0;
 var youtube_playlist = "";
 var soundcloud_playlist = "";
 var dancer_uid = 0;
@@ -220,48 +220,37 @@ function preload_stuff() {
     });
     loader.start();
     if (audio_mode == "local") {
-        buzz.defaults.loop = true;
-        buzz.defaults.formats = ['mp3', 'ogg'];
-        buzz.defaults.preload = 'auto';
-        buzz.defaults.autoplay = false;
-        var fatboy = new buzz.sound("assets/music/fatboy");
-        fatboy.set("id", "fatboy");
-        var walkmen = new buzz.sound("assets/music/walkmen");
-        walkmen.set("id", "walkmen");
-        var nahnahnah = new buzz.sound("assets/music/nahnahnah");
-        nahnahnah.set("id", "nahnahnah");
-        var sandstorm = new buzz.sound("assets/music/sandstorm");
-        sandstorm.set("id", "sandstorm");
-        var Taylor_shake_it_off = new buzz.sound("assets/music/Taylor_shake_it_off");
-        Taylor_shake_it_off.set("id", "Taylor_shake_it_off");
-        var heman = new buzz.sound("assets/music/heman");
-        heman.set("id", "heman");
-        var oakenfold = new buzz.sound("assets/music/oakenfold");
-        oakenfold.set("id", "oakenfold");
-        var grounded = new buzz.sound("assets/music/grounded");
-        grounded.set("id", "grounded");
-        var singalong = new buzz.sound("assets/music/singalong");
-        singalong.set("id", "singalong");
-        var trololo = new buzz.sound("assets/music/trololo");
-        trololo.set("id", "trololo");
-        var breadfish = new buzz.sound("assets/music/breadfish");
-        breadfish.set("id", "breadfish");
-        var bubblebutt = new buzz.sound("assets/music/bubblebutt");
-        bubblebutt.set("id", "bubblebutt");
-        var twist = new buzz.sound("assets/music/twist");
-        twist.set("id", "twist");
-        var wegotyou = new buzz.sound("assets/music/wegotyou");
-        wegotyou.set("id", "wegotyou");
-        var bazz = new buzz.sound("assets/music/bazz");
-        bazz.set("id", "bazz");
-        var halffull = new buzz.sound("assets/music/halffull");
-        halffull.set("id", "halffull");
-        var hotlineloop = new buzz.sound("assets/music/hotlineloop");
-        hotlineloop.set("id", "hotlineloop");
-        var nopanties = new buzz.sound("assets/music/nopanties");
-        nopanties.set("id", "nopanties");
-        myGroup = new buzz.group([fatboy, walkmen, trololo, bubblebutt, singalong, nopanties, nahnahnah, oakenfold, grounded, twist, wegotyou, bazz, halffull, hotlineloop, sandstorm, heman, Taylor_shake_it_off, breadfish]);
-        myGroup.setVolume(global_volume)
+	buzz.defaults.loop = true;
+	buzz.defaults.formats = ['mp3'];
+	buzz.defaults.preload = 'auto';
+	buzz.defaults.autoplay = false;
+	var money = new buzz.sound("assets/music/gdp_money2"); money.set("id","money");
+	var spiltmilk = new buzz.sound("assets/music/spilt_milk_neighbor_128"); spiltmilk.set("id","spiltmilk");
+	var bubblebutt = new buzz.sound("assets/music/bubblebutt"); bubblebutt.set("id","bubblebutt");
+	var twist = new buzz.sound("assets/music/twist"); twist.set("id","twist");
+	var wegotyou = new buzz.sound("assets/music/wegotyou"); wegotyou.set("id","wegotyou");
+	var nahnah = new buzz.sound("assets/music/nahnahnah"); nahnah.set("id","nahnah");
+	var sandstorm = new buzz.sound("assets/music/sandstorm"); sandstorm.set("id","sandstorm");
+	var Taylor_shake_it_off = new buzz.sound("assets/music/Taylor_shake_it_off"); Taylor_shake_it_off.set("id","Taylor_shake_it_off");
+	var heman = new buzz.sound("assets/music/heman"); heman.set("id","heman");
+	var oakenfold = new buzz.sound("assets/music/oakenfold"); oakenfold.set("id","oakenfold");
+	var grounded = new buzz.sound("assets/music/grounded"); grounded.set("id","grounded");
+	var singalong = new buzz.sound("assets/music/singalong"); singalong.set("id","singalong");
+	var trololo = new buzz.sound("assets/music/trololo"); trololo.set("id","trololo");
+	var breadfish = new buzz.sound("assets/music/breadfish"); breadfish.set("id","breadfish");
+	var rex = new buzz.sound("assets/music/rex_the_dog_128"); rex.set("id","rex");
+	var whitehorse = new buzz.sound("assets/music/gdp_whitehorse"); whitehorse.set("id", "whitehorse");
+	var halffull = new buzz.sound("assets/music/halffull"); halffull.set("id","halffull");
+	var nopanties = new buzz.sound("assets/music/nopanties"); nopanties.set("id","nopanties");
+	var walkmen = new buzz.sound("assets/music/walkmen"); walkmen.set("id","walkmen");
+	var bazz = new buzz.sound("assets/music/bazz"); bazz.set("id","bazz");
+	var fatboy = new buzz.sound("assets/music/fatboy"); fatboy.set("id","fatboy");
+	var rex2 = new buzz.sound("music/gdp_rex"); rex2.set("id","rex2");
+	var spiltmilk2 = new buzz.sound("music/spiltmilk2"); spiltmilk2.set("id","spiltmilk2");
+	var hotlineloop = new buzz.sound("assets/music/hotlineloop"); hotlineloop.set("id","hotlineloop");
+	myGroup = new buzz.group([rex,money,walkmen,whitehorse,spiltmilk,spiltmilk2,rex2,bazz,breadfish,singalong,fatboy,grounded,trololo,sandstorm,nopanties,halffull,heman,wegotyou,bubblebutt,hotlineloop,twist,Taylor_shake_it_off,oakenfold,nahnah]); 
+
+	myGroup.setVolume(global_volume);
     }
     function done_preload() {
         var o = location.search.split('o=')[1];
@@ -318,8 +307,8 @@ function init_default() {
         append_a_dancer(dancer_uid, n, x, y, max_depth, w)
     }
     setTimeout(function() {
-        buzz.sounds[song_num].play().setVolume(global_volume)
-    }, 2000);
+		buzz.sounds[song_num].play().setVolume(global_volume);
+	},500);
     $(".bg").backstretch("assets/dancefloors/dancefloor_" + bg_num + ".jpg")
 }
 function load_share(loaded_obj) {
@@ -352,7 +341,7 @@ function load_share(loaded_obj) {
     }
     setTimeout(function() {
         buzz.sounds[loaded_obj.song_num].play().setVolume(global_volume)
-    }, 2000);
+    }, 500);
     $(".bg").backstretch("assets/dancefloors/dancefloor_" + loaded_obj.bg_num + ".jpg");
     $(".dfont,.dfont2").hide();
     share_obj = loaded_obj
@@ -395,11 +384,9 @@ $(document).ready(function() {
     });
     $("#songswitch").click(function() {
         song_num++;
-        if (song_num > buzz.sounds.length - 1) {
-            song_num = 0
-        }
-        myGroup.stop();
-        buzz.sounds[song_num].play().setVolume(global_volume);
+		if(song_num>buzz.sounds.length-1){song_num=0;}
+		myGroup.stop(); 
+		buzz.sounds[song_num].play().setVolume(global_volume);
         share_obj.song_num = song_num
     });
     $("#dancefloorswitch").click(function() {
