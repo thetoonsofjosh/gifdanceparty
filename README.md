@@ -18,7 +18,6 @@ Here's a list of gifs I'm missing
 - roboguy.gif
 - sonofgod.gif
 - squidglamor.gif
-- stripperinblack.gif
 - wowsa.gif
   
 # Version 2
