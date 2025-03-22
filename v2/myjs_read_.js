@@ -173,10 +173,15 @@ var ALL_SCENES = [
 	{name:"dancefloor_9.jpg"},
 	{name:"berghain.jpg"},
 	{name:"dancefloor_11.jpg"},
+	{name:"dancefloor_12.jpg"},
 	{name:"dancefloor_13.jpg"},
 	{name:"dancefloor_14b.jpg"},
 	{name:"dancefloor_10.jpg"},
 	{name:"dancefloor_2.jpg"},
+	{name:"dancefloor_3.jpg"},
+	{name:"dancefloor_4.jpg"},
+	{name:"dancefloor_7.jpg"},
+	{name:"dancefloor_14.jpg"},
 ];
 var SCENE_INDEX = 1;
 
