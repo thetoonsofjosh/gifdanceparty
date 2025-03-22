@@ -4,15 +4,8 @@ The first version, released in March 2013 and the second version, released in No
 
 # Version 1
 Check version 1 here https://thetoonsofjosh.github.io/gifdanceparty/v1/
-
-It's almost complete, just with a few missing gifs.
-
-Here's a list of gifs I'm missing
-- roboguy.gif
-- sonofgod.gif
-- wowsa.gif
   
 # Version 2
 Check version 2 here https://thetoonsofjosh.github.io/gifdanceparty/v2/
 
-It's complete, everything's on here.
+It's all complete, almost everything's on here.
