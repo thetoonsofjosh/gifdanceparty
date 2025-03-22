@@ -182,6 +182,9 @@ var ALL_SCENES = [
 	{name:"dancefloor_4.jpg"},
 	{name:"dancefloor_7.jpg"},
 	{name:"dancefloor_14.jpg"},
+	{name:"dancefloor_15.jpg"},
+	{name:"dancefloor_16.jpg"},
+	{name:"dancefloor_17.jpg"},
 ];
 var SCENE_INDEX = 1;
 
