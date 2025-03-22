@@ -13,8 +13,6 @@ Here's a list of gifs I'm missing
 - morpher.gif
 - nopanties.gif
 - nudeflames.gif
-- oldstep.gif
-- psypsy.gif
 - roboguy.gif
 - sonofgod.gif
 - wowsa.gif
