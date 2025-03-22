@@ -246,7 +246,7 @@ function preload_stuff() {
 	var bazz = new buzz.sound("assets/music/bazz"); bazz.set("id","bazz");
 	var fatboy = new buzz.sound("assets/music/fatboy"); fatboy.set("id","fatboy");
 	var rex2 = new buzz.sound("music/gdp_rex"); rex2.set("id","rex2");
-	var spiltmilk2 = new buzz.sound("music/spiltmilk2"); spiltmilk2.set("id","spiltmilk2");
+	var spiltmilk2 = new buzz.sound("music/gdp_spiltmilk"); spiltmilk2.set("id","spiltmilk2");
 	var hotlineloop = new buzz.sound("assets/music/hotlineloop"); hotlineloop.set("id","hotlineloop");
 	myGroup = new buzz.group([rex,money,walkmen,whitehorse,spiltmilk,spiltmilk2,rex2,bazz,breadfish,singalong,fatboy,grounded,trololo,sandstorm,nopanties,halffull,heman,wegotyou,bubblebutt,hotlineloop,twist,Taylor_shake_it_off,oakenfold,nahnah]); 
 
