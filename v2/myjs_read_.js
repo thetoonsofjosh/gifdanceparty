@@ -274,8 +274,8 @@ $(document).ready(function(){
 });
 
 
-var min_depth = 499;
-var max_depth = 501;
+var min_depth = 501;
+var max_depth = 505;
 var DANCER_COUNT = 0;
 var gif_max_width = 600;
 var gif_max_height = 800;
@@ -524,7 +524,6 @@ function init_default(){
 	var bw = parseInt($("body").width());
 	var bh = parseInt($("body").height());
 	add_a_dancer("makeitrain","", 0.41*bw, 0.41*bh, 501, 0.18*bw, true);
-	add_a_dancer("pixelbabes","", 0.33*bw, 0.28*bh, 502, 0.36*bw, true);
 	add_a_dancer("ned","", 0.08*bw, 0.45*bh, 503, 0.29*bw, true);
 	add_a_dancer("baldi","", 0.67*bw, 0.41*bh, 504, 0.26*bw, true);
 	max_depth = 505;
@@ -702,8 +701,8 @@ function preload(){
 	buzz.defaults.formats = ['mp3'];
 	buzz.defaults.preload = 'auto';
 	buzz.defaults.autoplay = false;
-	var money = new buzz.sound("music/gdp_money2"); money.set("id","money");
 	var spiltmilk = new buzz.sound("music/spilt_milk_neighbor_128"); spiltmilk.set("id","spiltmilk");
+	var money = new buzz.sound("music/gdp_money2"); money.set("id","money");
 	var bubblebutt = new buzz.sound("music/gdp_bubblebutt"); bubblebutt.set("id","bubblebutt");
 	var twist = new buzz.sound("music/twist"); twist.set("id","twist");
 	var wegotyou = new buzz.sound("music/wegotyou"); wegotyou.set("id","wegotyou");
@@ -779,11 +778,3 @@ $.fn.center = function(x,y){
 
 
 document.addEventListener('contextmenu', event => event.preventDefault());
-
-
-
-
-
-
-
-
