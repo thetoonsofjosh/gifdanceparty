@@ -155,6 +155,7 @@ var ALL_DANCERS = [
 { name: "patrick", artist: "", category: "" },
 { name: "pedopickle", artist: "", category: "" },
 { name: "penguin", artist: "", category: "" },
+{ name: "penguin2", artist: "", category: "" },
 { name: "pepego", artist: "", category: "" },
 { name: "peter", artist: "", category: "" },
 { name: "pikachu", artist: "", category: "" },
