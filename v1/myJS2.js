@@ -21,7 +21,7 @@ var model = function() {
             f: false
         }],
         bg: "",
-        s: "singalong",
+        s: "spiltmilk",
         df: 2,
         i: 3,
         wn: [$(stage).height(), $(stage).width()],
@@ -212,29 +212,31 @@ $(document).ready(function() {
     buzz.defaults.formats = ['mp3'];
     buzz.defaults.preload = 'auto';
     buzz.defaults.autoplay = false;
-    var fatboy = new buzz.sound("music/fatboy");
-    fatboy.set("id", "fatboy");
-    var walkmen = new buzz.sound("music/walkmen");
-    walkmen.set("id", "walkmen");
-    var nahnahnah = new buzz.sound("music/nahnahnah");
-    nahnahnah.set("id", "nahnahnah");
-    var grounded = new buzz.sound("music/grounded");
-    grounded.set("id", "grounded");
-    var singalong = new buzz.sound("music/singalong");
-    singalong.set("id", "singalong");
-    var trololo = new buzz.sound("music/trololo");
-    trololo.set("id", "trololo");
-    var bubblebutt = new buzz.sound("music/bubblebutt");
-    bubblebutt.set("id", "bubblebutt");
-    var twist = new buzz.sound("music/twist");
-    twist.set("id", "twist");
-    var wegotyou = new buzz.sound("music/wegotyou");
-    wegotyou.set("id", "wegotyou");
-    var bazz = new buzz.sound("music/bazz");
-    bazz.set("id", "bazz");
-    var halffull = new buzz.sound("music/halffull");
-    halffull.set("id", "halffull");
-    var myGroup = new buzz.group([fatboy, walkmen, trololo, bubblebutt, singalong, nahnahnah, grounded, twist, wegotyou, bazz, halffull]);
+	var spiltmilk = new buzz.sound("music/spilt_milk_neighbor_128"); spiltmilk.set("id","spiltmilk");
+	var money = new buzz.sound("music/gdp_money2"); money.set("id","money");
+	var bubblebutt = new buzz.sound("music/bubblebutt"); bubblebutt.set("id","bubblebutt");
+	var twist = new buzz.sound("music/twist"); twist.set("id","twist");
+	var wegotyou = new buzz.sound("music/wegotyou"); wegotyou.set("id","wegotyou");
+	var nahnah = new buzz.sound("music/nahnahnah"); nahnah.set("id","nahnah");
+	var sandstorm = new buzz.sound("music/sandstorm"); sandstorm.set("id","sandstorm");
+	var Taylor_shake_it_off = new buzz.sound("music/Taylor_shake_it_off"); Taylor_shake_it_off.set("id","Taylor_shake_it_off");
+	var heman = new buzz.sound("music/heman"); heman.set("id","heman");
+	var oakenfold = new buzz.sound("music/oakenfold"); oakenfold.set("id","oakenfold");
+	var grounded = new buzz.sound("music/grounded"); grounded.set("id","grounded");
+	var singalong = new buzz.sound("music/singalong"); singalong.set("id","singalong");
+	var trololo = new buzz.sound("music/trololo"); trololo.set("id","trololo");
+	var breadfish = new buzz.sound("music/breadfish"); breadfish.set("id","breadfish");
+	var rex = new buzz.sound("music/rex_the_dog_128"); rex.set("id","rex");
+	var whitehorse = new buzz.sound("music/gdp_whitehorse"); whitehorse.set("id", "whitehorse");
+	var halffull = new buzz.sound("music/halffull"); halffull.set("id","halffull");
+	var nopanties = new buzz.sound("music/nopanties"); nopanties.set("id","nopanties");
+	var walkmen = new buzz.sound("music/walkmen"); walkmen.set("id","walkmen");
+	var bazz = new buzz.sound("music/bazz"); bazz.set("id","bazz");
+	var fatboy = new buzz.sound("music/fatboy"); fatboy.set("id","fatboy");
+	var rex2 = new buzz.sound("music/gdp_rex"); rex2.set("id","rex2");
+	var spiltmilk2 = new buzz.sound("music/gdp_spiltmilk"); spiltmilk2.set("id","spiltmilk2");
+	var hotlineloop = new buzz.sound("music/hotlineloop"); hotlineloop.set("id","hotlineloop");
+	myGroup = new buzz.group([rex,money,walkmen,whitehorse,spiltmilk,spiltmilk2,rex2,bazz,breadfish,singalong,fatboy,grounded,trololo,sandstorm,nopanties,halffull,heman,wegotyou,bubblebutt,hotlineloop,twist,Taylor_shake_it_off,oakenfold,nahnah]); 
     $("#dancefloorswitch").click(function(event) {
         bgNum++;
         if (bgNum > bgMax) {
