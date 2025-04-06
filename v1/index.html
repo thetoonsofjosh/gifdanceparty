@@ -1,0 +1,470 @@
+<!DOCTYPE html>  <!-- HTML5 -->
+  
+<head>
+
+  <meta https-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>GIF DANCE PARTY</title>
+
+  <script src="js/bowser.min.js"></script>
+  <script>
+  if(bowser.windowsphone || bowser.android || bowser.ios || bowser.iphone || bowser.ipod || bowser.ipad){
+    location.href = "nomobile.html";
+  }
+  </script>
+  <!-- google font -->  
+  <link href='https://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>
+  <!-- my CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+  <!-- jquery UI -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.2/themes/vader/jquery-ui.css" />
+  <script src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+  <!-- backstretch -->
+  <script src="js/jquery.backstretch.js"></script> 
+  <script type="text/javascript" src="js/jquery.anystretch.min.js"></script>
+  <!-- form -->
+  <script src="js/jquery.form.js"></script> 
+  <!-- clipboard copy -->
+  <script type="text/javascript" src="js/ZeroClipboard.js"></script>
+  <!-- buzz -->
+  <script src="js/buzz.js"></script> 
+  <!-- sharing stuff -->
+  <script type="text/javascript" src="js/underscore-min.js"></script>
+  <script type="text/javascript" src="js/jquery.ba-bbq.min.js"></script>
+
+  <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- META META META -->
+    <meta name="description" content="The best party on the internet!" />
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="GIF DANCE PARTY">
+    <meta itemprop="description" content="The best party on the internet!">
+    <meta itemprop="image" content="img/gdp_cover.jpg">
+    <!-- Twitter Card data -->
+    <meta name="twitter:title" content="GIF DANCE PARTY">
+    <meta name="twitter:description" content="The best party on the internet!">
+    <meta name="twitter:image" content="img/gdp_cover.jpg">
+    <meta name="twitter:image:src" content="img/gdp_cover.jpg">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="GIF DANCE PARTY" />
+    <meta property="og:image" content="img/gdp_cover.jpg" />
+    <meta property="og:description" content="The best party on the internet!" />
+
+</head>
+  
+<body>
+
+
+  <div id="blackout"></div>
+
+  <!-- LOADING -->
+  <div id="modal_loading">
+    <img src="img/littleraver.gif" width="35" height="35" style="margin-bottom:-3px;"> &nbsp;LOADING GIF DANCE PARTY &nbsp; <img src="img/littleraver.gif" width="35" height="35" style="margin-bottom:-3px;">
+  </div>
+
+
+
+
+
+
+  <div id="container">
+
+    <!-- MENU TOP -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div id="menu_top">
+    <center>
+
+      <!-- add dancer --> 
+      <div class="menu_item" style="color:#83d8ff;">
+        <span id="select_dancer" class="menu_hover modal_open">DANCERS</span>
+      </div>
+
+      <!-- select song --> 
+      <div class="menu_item" style="margin-left:25px;color:#ffd283;">
+        <span id="select_song" class="menu_hover modal_open">MUSIC</span>
+      </div>
+
+      <!-- switch dancefloor --> 
+      <div class="menu_item" style="margin-left:25px;color:#fcff00;">
+        <span id="dancefloorswitch" class="menu_hover">SCENE</span>
+      </div>
+
+       <!-- about -->
+      <div class="menu_item" style="margin-left:25px;color:#f368ff;" >
+        <span id="about" class="menu_hover modal_open">ABOUT</span>
+      </div> 
+
+    </center>
+    </div>
+
+    <div id="installation"><a href="https://www.gifdanceparty.com"><img src="img/check_out.png" width="220"></a></div>
+    <div id="installation2"><img src="img/frog_left.gif" width="55"></div>
+
+
+    <!-- DANCERS -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div id="dancers"></div>
+
+    <!-- MODAL BG -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="modal_bg"></div>
+
+    <!-- MODAL SELECT SONG -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="modal" id="modal_select_song" style="width:200px;">
+      <div class="song_list" id=""><i>NO MUSIC</i></div>
+      <div class="song_list" id="twist">TWIST</div>
+      <div class="song_list" id="grounded">GROUNDED</div>
+      <div class="song_list" id="singalong">SINGALONG</div>
+      <div class="song_list" id="halffull">HALF FULL</div>
+      <div class="song_list" id="trololo">TROLOLO</div>
+      <div class="song_list" id="bubblebutt">BUBBLE BUTT</div>
+      <div class="song_list" id="walkmen">WALKMEN</div>
+      <div class="song_list" id="wegotyou">WE GOT YOU</div>
+      <div class="song_list" id="bazz">BAZZ HEAD</div>
+      <div class="song_list" id="fatboy">FATBOY</div>
+      <div class="song_list" id="nahnahnah">NAH NAH NAH</div>
+    </div>
+
+    <!-- MODAL SELECT DANCER -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="modal" id="modal_select_dancer">
+		<div class="dancer_thumb" id="8bitcarlton"><img src="dancers_thumbs/8bitcarlton.png" width="100"></div>
+		<div class="dancer_thumb" id="alexg"><img src="dancers_thumbs/alexg.png" width="100"></div>
+		<div class="dancer_thumb" id="alienhands"><img src="dancers_thumbs/alienhands.png" width="100"></div>
+		<div class="dancer_thumb" id="alientwerk"><img src="dancers_thumbs/alientwerk.png" width="100"></div>
+		<div class="dancer_thumb" id="anxietyonline"><img src="dancers_thumbs/anxietyonline.png" width="100"></div>
+		<div class="dancer_thumb" id="apple"><img src="dancers_thumbs/apple.png" width="100"></div>
+		<div class="dancer_thumb" id="arnold"><img src="dancers_thumbs/arnold.png" width="100"></div>
+		<div class="dancer_thumb" id="babe"><img src="dancers_thumbs/babe.png" width="100"></div>
+		<div class="dancer_thumb" id="baldi"><img src="dancers_thumbs/baldi.png" width="100"></div>
+		<div class="dancer_thumb" id="banana"><img src="dancers_thumbs/banana.png" width="100"></div>
+		<div class="dancer_thumb" id="bananabounce"><img src="dancers_thumbs/bananabounce.png" width="100"></div>
+		<div class="dancer_thumb" id="banbanstyle"><img src="dancers_thumbs/banbanstyle.png" width="100"></div>
+		<div class="dancer_thumb" id="banginralph"><img src="dancers_thumbs/banginralph.png" width="100"></div>
+		<div class="dancer_thumb" id="bb"><img src="dancers_thumbs/bb.png" width="100"></div>
+		<div class="dancer_thumb" id="bear"><img src="dancers_thumbs/bear.png" width="100"></div>
+		<div class="dancer_thumb" id="bearjustin"><img src="dancers_thumbs/bearjustin.png" width="100"></div>
+		<div class="dancer_thumb" id="bernie"><img src="dancers_thumbs/bernie.png" width="100"></div>
+		<div class="dancer_thumb" id="bird"><img src="dancers_thumbs/bird.png" width="100"></div>
+		<div class="dancer_thumb" id="blob"><img src="dancers_thumbs/blob.png" width="100"></div>
+		<div class="dancer_thumb" id="bmo"><img src="dancers_thumbs/bmo.png" width="100"></div>
+		<div class="dancer_thumb" id="bodyspin"><img src="dancers_thumbs/bodyspin.png" width="100"></div>
+		<div class="dancer_thumb" id="bonebreak"><img src="dancers_thumbs/bonebreak.png" width="100"></div>
+		<div class="dancer_thumb" id="bones"><img src="dancers_thumbs/bones.png" width="100"></div>
+		<div class="dancer_thumb" id="boomercan"><img src="dancers_thumbs/boomercan.png" width="100"></div>
+		<div class="dancer_thumb" id="boomersdoink"><img src="dancers_thumbs/boomersdoink.png" width="100"></div>
+		<div class="dancer_thumb" id="brainbeer"><img src="dancers_thumbs/brainbeer.png" width="100"></div>
+		<div class="dancer_thumb" id="breakglitch"><img src="dancers_thumbs/breakglitch.png" width="100"></div>
+		<div class="dancer_thumb" id="breakout"><img src="dancers_thumbs/breakout.png" width="100"></div>
+		<div class="dancer_thumb" id="brian"><img src="dancers_thumbs/brian.png" width="100"></div>
+		<div class="dancer_thumb" id="bunny"><img src="dancers_thumbs/bunny.png" width="100"></div>
+		<div class="dancer_thumb" id="bunnyspank"><img src="dancers_thumbs/bunnyspank.png" width="100"></div>
+		<div class="dancer_thumb" id="business"><img src="dancers_thumbs/business.png" width="100"></div>
+		<div class="dancer_thumb" id="cact"><img src="dancers_thumbs/cact.png" width="100"></div>
+		<div class="dancer_thumb" id="cactusgroove"><img src="dancers_thumbs/cactusgroove.png" width="100"></div>
+		<div class="dancer_thumb" id="carlton"><img src="dancers_thumbs/carlton.png" width="100"></div>
+		<div class="dancer_thumb" id="cd"><img src="dancers_thumbs/cd.png" width="100"></div>
+		<div class="dancer_thumb" id="celery"><img src="dancers_thumbs/celery.png" width="100"></div>
+		<div class="dancer_thumb" id="charizard"><img src="dancers_thumbs/charizard.png" width="100"></div>
+		<div class="dancer_thumb" id="charlie"><img src="dancers_thumbs/charlie.png" width="100"></div>
+		<div class="dancer_thumb" id="chicken"><img src="dancers_thumbs/chicken.png" width="100"></div>
+		<div class="dancer_thumb" id="clapping"><img src="dancers_thumbs/clapping.png" width="100"></div>
+		<div class="dancer_thumb" id="classy"><img src="dancers_thumbs/classy.png" width="100"></div>
+		<div class="dancer_thumb" id="clubpenguin"><img src="dancers_thumbs/clubpenguin.png" width="100"></div>
+		<div class="dancer_thumb" id="cow"><img src="dancers_thumbs/cow.png" width="100"></div>
+		<div class="dancer_thumb" id="cowboy"><img src="dancers_thumbs/cowboy.png" width="100"></div>
+		<div class="dancer_thumb" id="cowboyspin"><img src="dancers_thumbs/cowboyspin.png" width="100"></div>
+		<div class="dancer_thumb" id="crazyarmguy"><img src="dancers_thumbs/crazyarmguy.png" width="100"></div>
+		<div class="dancer_thumb" id="crazygreenguy"><img src="dancers_thumbs/crazygreenguy.png" width="100"></div>
+		<div class="dancer_thumb" id="crazyhandguy"><img src="dancers_thumbs/crazyhandguy.png" width="100"></div>
+		<div class="dancer_thumb" id="crazyliz"><img src="dancers_thumbs/crazyliz.png" width="100"></div>
+		<div class="dancer_thumb" id="critique"><img src="dancers_thumbs/critique.png" width="100"></div>
+		<div class="dancer_thumb" id="crochalien"><img src="dancers_thumbs/crochalien.png" width="100"></div>
+		<div class="dancer_thumb" id="dancegirl"><img src="dancers_thumbs/dancegirl.png" width="100"></div>
+		<div class="dancer_thumb" id="dannyd"><img src="dancers_thumbs/dannyd.png" width="100"></div>
+		<div class="dancer_thumb" id="deadpool"><img src="dancers_thumbs/deadpool.png" width="100"></div>
+		<div class="dancer_thumb" id="dinochill"><img src="dancers_thumbs/dinochill.png" width="100"></div>
+		<div class="dancer_thumb" id="dinohump"><img src="dancers_thumbs/dinohump.png" width="100"></div>
+		<div class="dancer_thumb" id="dinoshuffle"><img src="dancers_thumbs/dinoshuffle.png" width="100"></div>
+		<div class="dancer_thumb" id="discoball"><img src="dancers_thumbs/discoball.png" width="100"></div>
+		<div class="dancer_thumb" id="doggy"><img src="dancers_thumbs/doggy.png" width="100"></div>
+		<div class="dancer_thumb" id="doggydog"><img src="dancers_thumbs/doggydog.png" width="100"></div>
+		<div class="dancer_thumb" id="doggyshuffle"><img src="dancers_thumbs/doggyshuffle.png" width="100"></div>
+		<div class="dancer_thumb" id="drakeHotline"><img src="dancers_thumbs/drakeHotline.png" width="100"></div>
+		<div class="dancer_thumb" id="drakePush"><img src="dancers_thumbs/drakePush.png" width="100"></div>
+		<div class="dancer_thumb" id="drakeWrist"><img src="dancers_thumbs/drakeWrist.png" width="100"></div>
+		<div class="dancer_thumb" id="duck"><img src="dancers_thumbs/duck.png" width="100"></div>
+		<div class="dancer_thumb" id="eggman"><img src="dancers_thumbs/eggman.png" width="100"></div>
+		<div class="dancer_thumb" id="elfy"><img src="dancers_thumbs/elfy.png" width="100"></div>
+		<div class="dancer_thumb" id="elvenbooty"><img src="dancers_thumbs/elvenbooty.png" width="100"></div>
+		<div class="dancer_thumb" id="eric"><img src="dancers_thumbs/eric.png" width="100"></div>
+		<div class="dancer_thumb" id="explosion"><img src="dancers_thumbs/explosion.png" width="100"></div>
+		<div class="dancer_thumb" id="fabio"><img src="dancers_thumbs/fabio.png" width="100"></div>
+		<div class="dancer_thumb" id="fatspidey"><img src="dancers_thumbs/fatspidey.png" width="100"></div>
+		<div class="dancer_thumb" id="fitness1"><img src="dancers_thumbs/fitness1.png" width="100"></div>
+		<div class="dancer_thumb" id="fitnessbooty"><img src="dancers_thumbs/fitnessbooty.png" width="100"></div>
+		<div class="dancer_thumb" id="foreveralone"><img src="dancers_thumbs/foreveralone.png" width="100"></div>
+		<div class="dancer_thumb" id="fred"><img src="dancers_thumbs/fred.png" width="100"></div>
+		<div class="dancer_thumb" id="freedom"><img src="dancers_thumbs/freedom.png" width="100"></div>
+		<div class="dancer_thumb" id="froggyfresh"><img src="dancers_thumbs/froggyfresh.png" width="100"></div>
+		<div class="dancer_thumb" id="furball"><img src="dancers_thumbs/furball.png" width="100"></div>
+		<div class="dancer_thumb" id="fuzzball"><img src="dancers_thumbs/fuzzball.png" width="100"></div>
+		<div class="dancer_thumb" id="fuzzyside"><img src="dancers_thumbs/fuzzyside.png" width="100"></div>
+		<div class="dancer_thumb" id="gblaster"><img src="dancers_thumbs/gblaster.png" width="100"></div>
+		<div class="dancer_thumb" id="gene"><img src="dancers_thumbs/gene.png" width="100"></div>
+		<div class="dancer_thumb" id="getdown"><img src="dancers_thumbs/getdown.png" width="100"></div>
+		<div class="dancer_thumb" id="ghosty"><img src="dancers_thumbs/ghosty.png" width="100"></div>
+		<div class="dancer_thumb" id="gloves"><img src="dancers_thumbs/gloves.png" width="100"></div>
+		<div class="dancer_thumb" id="glowstix"><img src="dancers_thumbs/glowstix.png" width="100"></div>
+		<div class="dancer_thumb" id="gorilla"><img src="dancers_thumbs/gorilla.png" width="100"></div>
+		<div class="dancer_thumb" id="greenlady"><img src="dancers_thumbs/greenlady.png" width="100"></div>
+		<div class="dancer_thumb" id="greenlady2"><img src="dancers_thumbs/greenlady2.png" width="100"></div>
+		<div class="dancer_thumb" id="greenman"><img src="dancers_thumbs/greenman.png" width="100"></div>
+		<div class="dancer_thumb" id="greything"><img src="dancers_thumbs/greything.png" width="100"></div>
+		<div class="dancer_thumb" id="grooveowl"><img src="dancers_thumbs/grooveowl.png" width="100"></div>
+		<div class="dancer_thumb" id="gummibutt"><img src="dancers_thumbs/gummibutt.png" width="100"></div>
+		<div class="dancer_thumb" id="gummysuit"><img src="dancers_thumbs/gummysuit.png" width="100"></div>
+		<div class="dancer_thumb" id="halflife"><img src="dancers_thumbs/halflife.png" width="100"></div>
+		<div class="dancer_thumb" id="headbang"><img src="dancers_thumbs/headbang.png" width="100"></div>
+		<div class="dancer_thumb" id="headphoneguy"><img src="dancers_thumbs/headphoneguy.png" width="100"></div>
+		<div class="dancer_thumb" id="headshrink"><img src="dancers_thumbs/headshrink.png" width="100"></div>
+		<div class="dancer_thumb" id="headspin"><img src="dancers_thumbs/headspin.png" width="100"></div>
+		<div class="dancer_thumb" id="hellicopter"><img src="dancers_thumbs/hellicopter.png" width="100"></div>
+		<div class="dancer_thumb" id="heman"><img src="dancers_thumbs/heman.png" width="100"></div>
+		<div class="dancer_thumb" id="hiasfu"><img src="dancers_thumbs/hiasfu.png" width="100"></div>
+		<div class="dancer_thumb" id="hipdog"><img src="dancers_thumbs/hipdog.png" width="100"></div>
+		<div class="dancer_thumb" id="hotdog"><img src="dancers_thumbs/hotdog.png" width="100"></div>
+		<div class="dancer_thumb" id="hotdogs"><img src="dancers_thumbs/hotdogs.png" width="100"></div>
+		<div class="dancer_thumb" id="hula"><img src="dancers_thumbs/hula.png" width="100"></div>
+		<div class="dancer_thumb" id="humpery"><img src="dancers_thumbs/humpery.png" width="100"></div>
+		<div class="dancer_thumb" id="internetparty"><img src="dancers_thumbs/internetparty.png" width="100"></div>
+		<div class="dancer_thumb" id="isthisdani"><img src="dancers_thumbs/isthisdani.png" width="100"></div>
+		<div class="dancer_thumb" id="italiandisco"><img src="dancers_thumbs/italiandisco.png" width="100"></div>
+		<div class="dancer_thumb" id="jankeyguy"><img src="dancers_thumbs/jankeyguy.png" width="100"></div>
+		<div class="dancer_thumb" id="japandoll"><img src="dancers_thumbs/japandoll.png" width="100"></div>
+		<div class="dancer_thumb" id="jason"><img src="dancers_thumbs/jason.png" width="100"></div>
+		<div class="dancer_thumb" id="jasonc1"><img src="dancers_thumbs/jasonc1.png" width="100"></div>
+		<div class="dancer_thumb" id="josereal"><img src="dancers_thumbs/josereal.png" width="100"></div>
+		<div class="dancer_thumb" id="kenny"><img src="dancers_thumbs/kenny.png" width="100"></div>
+		<div class="dancer_thumb" id="kermy"><img src="dancers_thumbs/kermy.png" width="100"></div>
+		<div class="dancer_thumb" id="kirby"><img src="dancers_thumbs/kirby.png" width="100"></div>
+		<div class="dancer_thumb" id="kitty"><img src="dancers_thumbs/kitty.png" width="100"></div>
+		<div class="dancer_thumb" id="kittyglow"><img src="dancers_thumbs/kittyglow.png" width="100"></div>
+		<div class="dancer_thumb" id="kittyhump"><img src="dancers_thumbs/kittyhump.png" width="100"></div>
+		<div class="dancer_thumb" id="kittytrombone"><img src="dancers_thumbs/kittytrombone.png" width="100"></div>
+		<div class="dancer_thumb" id="konan"><img src="dancers_thumbs/konan.png" width="100"></div>
+		<div class="dancer_thumb" id="ladytroll"><img src="dancers_thumbs/ladytroll.png" width="100"></div>
+		<div class="dancer_thumb" id="leftshark"><img src="dancers_thumbs/leftshark.png" width="100"></div>
+		<div class="dancer_thumb" id="lemonshoulder"><img src="dancers_thumbs/lemonshoulder.png" width="100"></div>
+		<div class="dancer_thumb" id="lilguy"><img src="dancers_thumbs/lilguy.png" width="100"></div>
+		<div class="dancer_thumb" id="lisa"><img src="dancers_thumbs/lisa.png" width="100"></div>
+		<div class="dancer_thumb" id="llama"><img src="dancers_thumbs/llama.png" width="100"></div>
+		<div class="dancer_thumb" id="makeitrain"><img src="dancers_thumbs/makeitrain.png" width="100"></div>
+		<div class="dancer_thumb" id="mandarin"><img src="dancers_thumbs/mandarin.png" width="100"></div>
+		<div class="dancer_thumb" id="maranda"><img src="dancers_thumbs/maranda.png" width="100"></div>
+		<div class="dancer_thumb" id="matrix"><img src="dancers_thumbs/matrix.png" width="100"></div>
+		<div class="dancer_thumb" id="michj"><img src="dancers_thumbs/michj.png" width="100"></div>
+		<div class="dancer_thumb" id="mino"><img src="dancers_thumbs/mino.png" width="100"></div>
+		<div class="dancer_thumb" id="mj"><img src="dancers_thumbs/mj.png" width="100"></div>
+		<div class="dancer_thumb" id="momdance"><img src="dancers_thumbs/momdance.png" width="100"></div>
+		<div class="dancer_thumb" id="monkeybaby"><img src="dancers_thumbs/monkeybaby.png" width="100"></div>
+		<div class="dancer_thumb" id="mushroom"><img src="dancers_thumbs/mushroom.png" width="100"></div>
+		<div class="dancer_thumb" id="ned"><img src="dancers_thumbs/ned.png" width="100"></div>
+		<div class="dancer_thumb" id="nerd"><img src="dancers_thumbs/nerd.png" width="100"></div>
+		<div class="dancer_thumb" id="nomnom"><img src="dancers_thumbs/nomnom.png" width="100"></div>
+		<div class="dancer_thumb" id="noshorts"><img src="dancers_thumbs/noshorts.png" width="100"></div>
+		<div class="dancer_thumb" id="nyan"><img src="dancers_thumbs/nyan.png" width="100"></div>
+		<div class="dancer_thumb" id="obama"><img src="dancers_thumbs/obama.png" width="100"></div>
+		<div class="dancer_thumb" id="oldstep"><img src="dancers_thumbs/oldstep.png" width="100"></div>
+		<div class="dancer_thumb" id="orangeguy"><img src="dancers_thumbs/orangeguy.png" width="100"></div>
+		<div class="dancer_thumb" id="orangemike"><img src="dancers_thumbs/orangemike.png" width="100"></div>
+		<div class="dancer_thumb" id="orc"><img src="dancers_thumbs/orc.png" width="100"></div>
+		<div class="dancer_thumb" id="pa"><img src="dancers_thumbs/pa.png" width="100"></div>
+		<div class="dancer_thumb" id="patrick"><img src="dancers_thumbs/patrick.png" width="100"></div>
+		<div class="dancer_thumb" id="pedopickle"><img src="dancers_thumbs/pedopickle.png" width="100"></div>
+		<div class="dancer_thumb" id="penguin"><img src="dancers_thumbs/penguin.png" width="100"></div>
+		<div class="dancer_thumb" id="penguin2"><img src="dancers_thumbs/penguin2.png" width="100"></div>
+		<div class="dancer_thumb" id="pepego"><img src="dancers_thumbs/pepego.png" width="100"></div>
+		<div class="dancer_thumb" id="peter"><img src="dancers_thumbs/peter.png" width="100"></div>
+		<div class="dancer_thumb" id="pikachu"><img src="dancers_thumbs/pikachu.png" width="100"></div>
+		<div class="dancer_thumb" id="pikachu2"><img src="dancers_thumbs/pikachu2.png" width="100"></div>
+		<div class="dancer_thumb" id="pilboy"><img src="dancers_thumbs/pilboy.png" width="100"></div>
+		<div class="dancer_thumb" id="pixelbabes"><img src="dancers_thumbs/pixelbabes.png" width="100"></div>
+		<div class="dancer_thumb" id="pixelly"><img src="dancers_thumbs/pixelly.png" width="100"></div>
+		<div class="dancer_thumb" id="pizza"><img src="dancers_thumbs/pizza.png" width="100"></div>
+		<div class="dancer_thumb" id="pooh"><img src="dancers_thumbs/pooh.png" width="100"></div>
+		<div class="dancer_thumb" id="pony"><img src="dancers_thumbs/pony.png" width="100"></div>
+		<div class="dancer_thumb" id="ponyshuffle"><img src="dancers_thumbs/ponyshuffle.png" width="100"></div>
+		<div class="dancer_thumb" id="popnlock"><img src="dancers_thumbs/popnlock.png" width="100"></div>
+		<div class="dancer_thumb" id="possum"><img src="dancers_thumbs/possum.png" width="100"></div>
+		<div class="dancer_thumb" id="prep"><img src="dancers_thumbs/prep.png" width="100"></div>
+		<div class="dancer_thumb" id="pretzel"><img src="dancers_thumbs/pretzel.png" width="100"></div>
+		<div class="dancer_thumb" id="psych"><img src="dancers_thumbs/psych.png" width="100"></div>
+		<div class="dancer_thumb" id="psycho"><img src="dancers_thumbs/psycho.png" width="100"></div>
+		<div class="dancer_thumb" id="psypsy"><img src="dancers_thumbs/psypsy.png" width="100"></div>
+		<div class="dancer_thumb" id="pumpgirl"><img src="dancers_thumbs/pumpgirl.png" width="100"></div>
+		<div class="dancer_thumb" id="purplecat"><img src="dancers_thumbs/purplecat.png" width="100"></div>
+		<div class="dancer_thumb" id="putin"><img src="dancers_thumbs/putin.png" width="100"></div>
+		<div class="dancer_thumb" id="rainbow"><img src="dancers_thumbs/rainbow.png" width="100"></div>
+		<div class="dancer_thumb" id="rainbowwheel"><img src="dancers_thumbs/rainbowwheel.png" width="100"></div>
+		<div class="dancer_thumb" id="ralphcan"><img src="dancers_thumbs/ralphcan.png" width="100"></div>
+		<div class="dancer_thumb" id="rambley"><img src="dancers_thumbs/rambley.png" width="100"></div>
+		<div class="dancer_thumb" id="ravecat"><img src="dancers_thumbs/ravecat.png" width="100"></div>
+		<div class="dancer_thumb" id="raveon"><img src="dancers_thumbs/raveon.png" width="100"></div>
+		<div class="dancer_thumb" id="refwalk"><img src="dancers_thumbs/refwalk.png" width="100"></div>
+		<div class="dancer_thumb" id="reindeer"><img src="dancers_thumbs/reindeer.png" width="100"></div>
+		<div class="dancer_thumb" id="robothump"><img src="dancers_thumbs/robothump.png" width="100"></div>
+		<div class="dancer_thumb" id="rockkitty"><img src="dancers_thumbs/rockkitty.png" width="100"></div>
+		<div class="dancer_thumb" id="roger"><img src="dancers_thumbs/roger.png" width="100"></div>
+		<div class="dancer_thumb" id="runningworm"><img src="dancers_thumbs/runningworm.png" width="100"></div>
+		<div class="dancer_thumb" id="sasquatch"><img src="dancers_thumbs/sasquatch.png" width="100"></div>
+		<div class="dancer_thumb" id="saxguy"><img src="dancers_thumbs/saxguy.png" width="100"></div>
+		<div class="dancer_thumb" id="scorpion"><img src="dancers_thumbs/scorpion.png" width="100"></div>
+		<div class="dancer_thumb" id="shaggyandcarl"><img src="dancers_thumbs/shaggyandcarl.png" width="100"></div>
+		<div class="dancer_thumb" id="shakeitoff"><img src="dancers_thumbs/shakeitoff.png" width="100"></div>
+		<div class="dancer_thumb" id="shark"><img src="dancers_thumbs/shark.png" width="100"></div>
+		<div class="dancer_thumb" id="sharkidiot"><img src="dancers_thumbs/sharkidiot.png" width="100"></div>
+		<div class="dancer_thumb" id="shawty"><img src="dancers_thumbs/shawty.png" width="100"></div>
+		<div class="dancer_thumb" id="sheep"><img src="dancers_thumbs/sheep.png" width="100"></div>
+		<div class="dancer_thumb" id="shinchan"><img src="dancers_thumbs/shinchan.png" width="100"></div>
+		<div class="dancer_thumb" id="sidereach"><img src="dancers_thumbs/sidereach.png" width="100"></div>
+		<div class="dancer_thumb" id="sitonyou"><img src="dancers_thumbs/sitonyou.png" width="100"></div>
+		<div class="dancer_thumb" id="skeletonguy"><img src="dancers_thumbs/skeletonguy.png" width="100"></div>
+		<div class="dancer_thumb" id="skullpump"><img src="dancers_thumbs/skullpump.png" width="100"></div>
+		<div class="dancer_thumb" id="slappy"><img src="dancers_thumbs/slappy.png" width="100"></div>
+		<div class="dancer_thumb" id="smooch"><img src="dancers_thumbs/smooch.png" width="100"></div>
+		<div class="dancer_thumb" id="snoop"><img src="dancers_thumbs/snoop.png" width="100"></div>
+		<div class="dancer_thumb" id="spagett"><img src="dancers_thumbs/spagett.png" width="100"></div>
+    	<div class="dancer_thumb" id="speakerhead"><img src="dancers_thumbs/speakerhead.png" width="100"></div>
+		<div class="dancer_thumb" id="spinglitch"><img src="dancers_thumbs/spinglitch.png" width="100"></div>
+		<div class="dancer_thumb" id="spongeybob"><img src="dancers_thumbs/spongeybob.png" width="100"></div>
+		<div class="dancer_thumb" id="squidglamor"><img src="dancers_thumbs/squidglamor.png" width="100"></div>
+		<div class="dancer_thumb" id="squidword"><img src="dancers_thumbs/squidword.png" width="100"></div>
+		<div class="dancer_thumb" id="stan"><img src="dancers_thumbs/stan.png" width="100"></div>
+		<div class="dancer_thumb" id="steve"><img src="dancers_thumbs/steve.png" width="100"></div>
+		<div class="dancer_thumb" id="stitch"><img src="dancers_thumbs/stitch.png" width="100"></div>
+		<div class="dancer_thumb" id="stripper"><img src="dancers_thumbs/stripper.png" width="100"></div>
+		<div class="dancer_thumb" id="stripper1"><img src="dancers_thumbs/stripper1.png" width="100"></div>
+		<div class="dancer_thumb" id="stripper2"><img src="dancers_thumbs/stripper2.png" width="100"></div>
+		<div class="dancer_thumb" id="stripper3"><img src="dancers_thumbs/stripper3.png" width="100"></div>
+		<div class="dancer_thumb" id="stripperinblack"><img src="dancers_thumbs/stripperinblack.png" width="100"></div>
+		<div class="dancer_thumb" id="tej"><img src="dancers_thumbs/tej.png" width="100"></div>
+		<div class="dancer_thumb" id="textbanger"><img src="dancers_thumbs/textbanger.png" width="100"></div>
+		<div class="dancer_thumb" id="textfeelmusic"><img src="dancers_thumbs/textfeelmusic.png" width="100"></div>
+		<div class="dancer_thumb" id="textparyarrived"><img src="dancers_thumbs/textparyarrived.png" width="100"></div>
+		<div class="dancer_thumb" id="textyougothacked"><img src="dancers_thumbs/textyougothacked.png" width="100"></div>
+		<div class="dancer_thumb" id="thedj"><img src="dancers_thumbs/thedj.png" width="100"></div>
+		<div class="dancer_thumb" id="thehop"><img src="dancers_thumbs/thehop.png" width="100"></div>
+		<div class="dancer_thumb" id="thescramble"><img src="dancers_thumbs/thescramble.png" width="100"></div>
+		<div class="dancer_thumb" id="thewizard"><img src="dancers_thumbs/thewizard.png" width="100"></div>
+		<div class="dancer_thumb" id="theworm"><img src="dancers_thumbs/theworm.png" width="100"></div>
+		<div class="dancer_thumb" id="tim"><img src="dancers_thumbs/tim.png" width="100"></div>
+		<div class="dancer_thumb" id="trippypoly"><img src="dancers_thumbs/trippypoly.png" width="100"></div>
+		<div class="dancer_thumb" id="tripstand"><img src="dancers_thumbs/tripstand.png" width="100"></div>
+		<div class="dancer_thumb" id="troll"><img src="dancers_thumbs/troll.png" width="100"></div>
+		<div class="dancer_thumb" id="trump"><img src="dancers_thumbs/trump.png" width="100"></div>
+		<div class="dancer_thumb" id="tummy"><img src="dancers_thumbs/tummy.png" width="100"></div>
+		<div class="dancer_thumb" id="twerk"><img src="dancers_thumbs/twerk.png" width="100"></div>
+		<div class="dancer_thumb" id="twerk2"><img src="dancers_thumbs/twerk2.png" width="100"></div>
+		<div class="dancer_thumb" id="uberhappy"><img src="dancers_thumbs/uberhappy.png" width="100"></div>
+		<div class="dancer_thumb" id="undeadmale"><img src="dancers_thumbs/undeadmale.png" width="100"></div>
+		<div class="dancer_thumb" id="unicorn"><img src="dancers_thumbs/unicorn.png" width="100"></div>
+		<div class="dancer_thumb" id="veryman"><img src="dancers_thumbs/veryman.png" width="100"></div>
+		<div class="dancer_thumb" id="victorydance"><img src="dancers_thumbs/victorydance.png" width="100"></div>
+		<div class="dancer_thumb" id="waluigipump"><img src="dancers_thumbs/waluigipump.png" width="100"></div>
+		<div class="dancer_thumb" id="wariopump"><img src="dancers_thumbs/wariopump.png" width="100"></div>
+		<div class="dancer_thumb" id="wasntme"><img src="dancers_thumbs/wasntme.png" width="100"></div>
+		<div class="dancer_thumb" id="wendy"><img src="dancers_thumbs/wendy.png" width="100"></div>
+		<div class="dancer_thumb" id="whiteguy"><img src="dancers_thumbs/whiteguy.png" width="100"></div>
+		<div class="dancer_thumb" id="whiteperson"><img src="dancers_thumbs/whiteperson.png" width="100"></div>
+		<div class="dancer_thumb" id="wildarms"><img src="dancers_thumbs/wildarms.png" width="100"></div>		
+		<div class="dancer_thumb" id="woah"><img src="dancers_thumbs/woah.png" width="100"></div>
+		<div class="dancer_thumb" id="wormjelly"><img src="dancers_thumbs/wormjelly.png" width="100"></div>
+		<div class="dancer_thumb" id="wormlady"><img src="dancers_thumbs/wormlady.png" width="100"></div>
+		<div class="dancer_thumb" id="xray"><img src="dancers_thumbs/xray.png" width="100"></div>
+		<div class="dancer_thumb" id="yeti"><img src="dancers_thumbs/yeti.png" width="100"></div>
+		<div class="dancer_thumb" id="yoshi"><img src="dancers_thumbs/yoshi.png" width="100"></div>
+		<div class="dancer_thumb" id="zombie"><img src="dancers_thumbs/zombie.png" width="100"></div>		
+    </div>
+
+    <!-- MODAL UPLOAD BG IMAGE -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="modal" id="modal_upload"> <!-- !!! -->
+      UPLOAD A BACKGROUND IMAGE
+        <form id="submit_background_form" action="ajax/upload_background_image.php" method="post" enctype="multipart/form-data">
+          <div style="height:10px">&nbsp;</div>
+          File (Max 3MB)
+          <div style="height:10px">&nbsp;</div>
+          <input type="file" name="file" id="file" class="submit_background_input">
+          <input type="hidden" name="bg">
+          <input type="hidden" name="token" value="719af0c7b66b6280c2351f9e50aab308">
+          <div style="height:10px">&nbsp;</div>
+          <button type='button' class="submit_background_button"> SUBMIT </button>
+          <div id="form_response" style="margin-top:10px;"></div>
+        </form>
+
+    </div>
+
+    <!-- MODAL ABOUT -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="modal" id="modal_about">
+      GIF DANCE PARTY WAS IMAGINED AND CREATED BY <a href="https://fuzzywobble.com" target="_blank">FUZZY WOBBLE</a>  
+      ON MARCH 2013 FOR THE 'HUMOR & CODE' CLASS
+      AT THE PARSONS SCHOOL OF DESIGN & TECHNOLGOY. SINCE THEN IT HAS HAD MILLIONS OF HITS AND HAS
+      BEEN ENJOYED BY ALMOST EVERY COUNTRY ON THE PLANET. SPECIAL THANKS TO <a href="https://www.banditbrandit.com/" target="_blank">PATRICK BRANDT</a> 
+      FOR HELP WITH SOME OF THE CODE! AND THANKS TO <a href="https://www.behance.net/sylviadesign377c88" target="_blank">BOOMER</a> FOR 
+      TEDIOUSLY REMOVING THE BACKGROUNDS FRAME-BY-FRAME BACK IN EARLY '13 WHEN TRANSPARENT DANCE GIFS WERE NOT A THING.
+      WE HAVE NOW TURNED THIS INTO AN <a href="https://www.gifdanceparty.com/">IRL INSTALLATION</a> WITH 3D CAMERAS AND LOTS OF C++.
+    </div>
+
+    <!-- MODAL SHARE -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="modal" id="modal_share" style="width:390px;">  
+      <center>Your party URL</center>
+      <div style="height:10px;"></div>
+      <input type="text" id="input_shareURL">
+      <button id="copy_button" data-clipboard-text="">COPY</button>
+    </div>
+
+
+    <!-- FOOTER -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <div id="fuzzy_footer">
+        <a href="https://giphy.com">
+          <img src="logo_300w_horizontal.png" width="120" />
+        </a>
+        <div style="height:4px;"></div>
+        <span style="background-color:rgba(0,0,0,0.4);">
+          <a href="https://giphy.com">Giphy</a> presents <b>GIF DANCE PARTY</b>
+        </span>
+        <div style="height:2px;"></div>
+        <span style="background-color:rgba(0,0,0,0.4);">
+          Created by <a href='https://fuzzywobble.com' target='_blank'>Fuzzy Wobble</a>
+        </span>
+    </div>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-38174542-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+    </script>
+
+  </div>
+
+</body>
+
+  <script>
+  var sharePath = "";
+  </script>
+  <script src="myJS2.js"></script> 
+
+</html>
