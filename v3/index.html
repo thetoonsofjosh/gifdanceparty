@@ -1,0 +1,158 @@
+<!-- Fuzzy Wobble made this with his computer -->
+<!-- fuzzywobble.com -->
+
+
+<!DOCTYPE html>  
+
+	<head>
+
+		<meta charset="UTF-8">
+
+		<meta property="og:title" content="GIF Dance Party">
+		<meta property="og:description" content="The best party on the internet!">
+		<meta property="og:image" content="gif_dance_party_cover2_800.jpg">
+		<meta property="og:url" content="https://thetoonsofjosh.github.io/gifdanceparty/v2">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta property="og:site_name" content="GIF Dance Party">
+		<meta name="twitter:image:alt" content="The best party on the internet!">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+		<title>GIF Dance Party</title>
+
+		<script>
+		var isMobile = false;
+		if(navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/)){
+			isMobile = true;
+			window.location.replace("nomobile.html");
+		}
+		</script>
+
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+
+		<link href="https://fonts.googleapis.com/css?family=Racing+Sans+One|Ubuntu:300,400,500,700" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+		<script type="text/javascript" src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+		<script src="js/PxLoader.js"></script> 
+		<script src="js/PxLoaderImage.js"></script>
+		<script src="js/buzz.min.js"></script>
+
+	</head>
+
+	<body>
+
+
+		<!-- ============================================================= -->
+		<div id="whiteout"></div>
+
+
+		<!-- ============================================================= -->
+		<div id="loading_container">
+			<div class="centerxy">
+				<center>
+				<div id="loading_text">L o a d i n g . . .</div>
+				<div style="height:10px;"></div>
+				<img src="img/dance_load_4.gif" width="30">
+				<img src="img/dance_load_5.gif" width="30">
+				<img src="img/dance_load_6.gif" width="30">
+				<img src="img/dance_load_8.gif" width="30">
+				<img src="img/dance_load_9.gif" width="30">
+				</center>
+			</div>
+		</div>
+
+		<!-- ============================================================= -->
+		<div id="firstclick_container">
+			<div class="centerxy">
+				<center>
+				<div id="firstclick_text">Turn your sound on!</div>
+				<div id="firstclick_button">Okay, got it.</div>
+				</center>
+			</div>			
+		</div>
+
+
+		<!-- ============================================================= -->
+		<div id="artists_container">
+			<div id="close_artists">X</div>
+			<div class="centerxy">
+				<center><div id="artists_text">C o m i n g &nbsp;&nbsp; S o o n</div></center>
+			</div>
+		</div>
+
+
+		<!-- ============================================================= -->
+		<div id="topbutton_container">
+			<div id="topbutton_box" class="centerx">
+				<div class="topbutton" id="button_dancers">DANCERS</div>
+				<div class="topbutton" id="button_music">MUSIC</div>
+				<div class="topbutton" id="button_scene">SCENE</div>
+				<div class="topbutton" id="button_about">ABOUT</div>
+			</div>
+		</div>
+
+
+		<!-- ============================================================= -->
+		<div id="dancefloor">
+			<!-- populated by JS -->
+		</div>
+
+
+		<!-- ============================================================= -->
+		<div class="click_overlay centerxy" id="dancers_container">
+			<div id="close_dancers">X</div>
+			<div class="centerx" id="dancers_select">
+				<div class="dancerstype" id="dancers_characters">Character Dancers</div>
+				<div class="dancerstype" id="dancers_irl">IRL Dancers</div>
+				<div class="dancerstype" id="dancers_fx">Overlays &amp; FX</div>
+			</div>
+			<div class="dancers_type_container" id="character_dancers">
+				<!-- populated by JS -->
+			</div>
+			<div class="dancers_type_container" id="irl_dancers">
+				<!-- populated by JS -->
+			</div>
+			<div class="dancers_type_container" id="overlays_fx">
+				<!-- populated by JS -->
+			</div>
+			<div class="full-height"></div>
+		</div>
+
+
+		<!-- ============================================================= -->
+		<div id="about_container">
+			<div id="close_about">X</div>
+			<div id="about_content" class="centerxy">
+				<span class="crazy_rainbow">This is a non-commercial internet art project.</span>
+				<div style="height:25px;"></div>
+				Welcome to GIF Dance Party. 
+				Since creation, this project has evolved into a <a href="https://gifdanceparty.com/" target="_blank">GIF party installation</a> 
+				along with another website of full-on <a href="https://dddance.party/" target="_blank">3D dance insanity</a>. 
+				<div style="height:25px;"></div>
+				Have fun &nbsp; :)
+			</div>
+		</div>
+
+
+		<!-- ============================================================= -->
+		<div id="audio_bars">
+			<img src="img/bars100.gif" width="20">
+		</div>
+		<div id="who">
+			<a href="https://fuzzywobble.com/" target="_blank">Fuzzy Wobble</a>
+		</div>
+
+
+		<!-- ============================================================= -->
+		<script src="myjs_read_.js"></script>
+
+	</body>
+
+</html>
