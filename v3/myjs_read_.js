@@ -1,4 +1,3 @@
-
 var ALL_DANCERS = [
 { name: "alexg", artist: "", category: "irl" },
 { name: "alienhands", artist: "", category: "" },
@@ -377,6 +376,7 @@ $(document).ready(function(){
 	$("#dancers_container").hide();
 	$("#artists_container").hide();
 	$("#about_container").hide();
+	// Set a default background, which might be overwritten by loadFromURL()
 	$("#dancefloor").backstretch("backgrounds/"+ALL_SCENES[SCENE_INDEX].name);
 	preload();
 	
@@ -396,6 +396,7 @@ $(document).ready(function(){
 		SCENE_INDEX++;
 		if(SCENE_INDEX>=ALL_SCENES.length){SCENE_INDEX=0;}
 		$("#dancefloor").backstretch("backgrounds/"+ALL_SCENES[SCENE_INDEX].name);
+		updateURL(); // ADDED: Update URL on scene change
 	});
 
 	// CHANGE SCENE _______________________________________________________________________________________________
@@ -404,6 +405,7 @@ $(document).ready(function(){
 		if(song_num>buzz.sounds.length-1){song_num=0;}
 		myGroup.stop(); 
 		buzz.sounds[song_num].play().setVolume(global_volume);
+		updateURL(); // ADDED: Update URL on music change
 	});
 
 	// DANCERS _______________________________________________________________________________________________
@@ -470,6 +472,7 @@ $(document).ready(function(){
 	$(document).on('click','.close_dancer',function(){
 		var uid = $(this).closest(".dance_outter").attr("id");
 		$("#"+uid).remove();
+		updateURL(); // ADDED: Update URL on remove
 	});
 
 	// FRONT/BACK DANCER _______________________________________________________________________________________________
@@ -477,11 +480,13 @@ $(document).ready(function(){
 		var uid = $(this).closest(".dance_outter").attr("id");
 		max_depth++;
 		$("#"+uid).css("z-index",max_depth);
+		updateURL(); // ADDED: Update URL on z-index change
 	});
 	$(document).on('click','.bback',function(){
 		var uid = $(this).closest(".dance_outter").attr("id");
 		min_depth--;
 		$("#"+uid).css("z-index",min_depth);
+		updateURL(); // ADDED: Update URL on z-index change
 	});
 
 	// CLONE DANCER _______________________________________________________________________________________________
@@ -508,6 +513,7 @@ $(document).ready(function(){
 	      flip_element.removeClass("flip-h");
 	      flip_element.attr("data-flip","false");
 	    }
+		updateURL(); // ADDED: Update URL on flip
 	});
 
 	// ABOUT _______________________________________________________________________________________________
@@ -533,49 +539,18 @@ $(document).ready(function(){
 });
 
 
-
-
-
-
-
-
-
-
-
 //________________________________________________________ INIT DEFAULT DANCEFLOOR
 function init_default(){ 
-
-	/*
-	makeitrain [x:0.41,y:0.41,w:0.18]
-	pixelbabes [x:0.33,y:0.28,w:0.36]
-	ned [x:0.08,y:0.45,w:0.29]
-	baldi [x:0.67,y:0.41,w:0.26]
-	*/
 	var bw = parseInt($("body").width());
 	var bh = parseInt($("body").height());
 	add_a_dancer("makeitrain","", 0.41*bw, 0.41*bh, 501, 0.18*bw, true);
 	add_a_dancer("ned","", 0.08*bw, 0.45*bh, 503, 0.29*bw, true);
 	add_a_dancer("baldi","", 0.67*bw, 0.41*bh, 504, 0.26*bw, true);
 	max_depth = 505;
-
-	
+	updateURL(); // Create a shareable URL for the default scene
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //___________________________________________________________________________________ ADD A DANCER
-
 function add_a_dancer(name,category,_x,_y,_z,_w,preload){
 
 	if(_x===undefined||_x===null){
@@ -624,36 +599,15 @@ function add_a_dancer(name,category,_x,_y,_z,_w,preload){
 		$("#"+uid).find(".shadow").remove(); //no shadow for overlay
 	}
 
-	// var w = parseInt($("#"+uid).find(".shadow").css("width"));
-	// $("#"+uid).find(".shadow").css("margin-bottom",(-w/8)+"px");
-
 	DANCER_COUNT++;
-
+    // Only update URL if it's not part of the initial scene load
+    if(preload !== true){
+        updateURL();
+    }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //___________________________________________________________________________________ RESIZABLE
-
 function all_resizable(){ 
 	$(".resizer").resizable({
 		aspectRatio: true,
@@ -662,17 +616,14 @@ function all_resizable(){
 		maxHeight: gif_max_height,
 		resize:function(event,ui){
 			$(this).parent().css("width",ui.size.width+"px").css("height",ui.size.height+"px");
-			var wPct = parseFloat( ui.size.width / parseInt($("body").width()) );
-			console.log('pct width: ' + wPct);
 		},
 		stop:function(event,ui){
-			//nothing
+			updateURL(); // ADDED: Update URL on resize stop
 		}
 	});
 }
 
 //___________________________________________________________________________________ DRAGGABLE
-
 function all_draggable(){ 
 	$(".dance_outter").draggable({
 		scroll: false,
@@ -680,47 +631,22 @@ function all_draggable(){
 			is_dragging = true;
 		},
 		drag: function(event,ui){ 
-            var offset = $(this).offset();
-            var xPct = parseFloat( offset.left / parseInt($("body").width()) );
-            var yPct = parseFloat( offset.top / parseInt($("body").height()) );
-            console.log('pct x: ' + xPct);
-            console.log('pct y: ' + yPct);
+            // no need to update on drag, it's too intensive
 		},
 		stop:function(event,ui){
             is_dragging = false;
+			updateURL(); // ADDED: Update URL on drag stop
 		}
 	});
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //___________________________________________________________________________________ PRELOAD
 function preload(){ 
 
 	var loader = new PxLoader(); 
 	for(var i=0;i<ALL_SCENES.length;i++){
-		loader.addImage("backgrounds/"+ALL_SCENES[SCENE_INDEX].name);	
+		// Use the correct path for preloading
+		loader.addImage("backgrounds/"+ALL_SCENES[i].name);	
 	}
 	loader.addCompletionListener(function() { 
 	    done_preload();
@@ -731,46 +657,152 @@ function preload(){
 	buzz.defaults.formats = ['mp3'];
 	buzz.defaults.preload = 'auto';
 	buzz.defaults.autoplay = false;
-	var spiltmilk = new buzz.sound("music/spilt_milk_neighbor_128"); spiltmilk.set("id","spiltmilk");
-	var money = new buzz.sound("music/gdp_money2"); money.set("id","money");
-	var bubblebutt = new buzz.sound("music/gdp_bubblebutt"); bubblebutt.set("id","bubblebutt");
-	var twist = new buzz.sound("music/twist"); twist.set("id","twist");
-	var wegotyou = new buzz.sound("music/wegotyou"); wegotyou.set("id","wegotyou");
-	var nahnah = new buzz.sound("music/gdp_nahnah"); nahnah.set("id","nahnah");
-	var sandstorm = new buzz.sound("music/sandstorm"); sandstorm.set("id","sandstorm");
-	var Taylor_shake_it_off = new buzz.sound("music/Taylor_shake_it_off"); Taylor_shake_it_off.set("id","Taylor_shake_it_off");
-	var heman = new buzz.sound("music/heman"); heman.set("id","heman");
-	var oakenfold = new buzz.sound("music/oakenfold"); oakenfold.set("id","oakenfold");
-	var grounded = new buzz.sound("music/grounded"); grounded.set("id","grounded");
-	var singalong = new buzz.sound("music/gdp_singalong"); singalong.set("id","singalong");
-	var trololo = new buzz.sound("music/trololo"); trololo.set("id","trololo");
-	var breadfish = new buzz.sound("music/breadfish"); breadfish.set("id","breadfish");
-	var rex = new buzz.sound("music/rex_the_dog_128"); rex.set("id","rex");
-	var whitehorse = new buzz.sound("music/gdp_whitehorse"); whitehorse.set("id", "whitehorse");
-	var halffull = new buzz.sound("music/gdp_halffull"); halffull.set("id","halffull");
-	var nopanties = new buzz.sound("music/gdp_nopanties"); nopanties.set("id","nopanties");
-	var walkmen = new buzz.sound("music/gdp_walkmen"); walkmen.set("id","walkmen");
-	var bazz = new buzz.sound("music/bazz"); bazz.set("id","bazz");
-	var fatboy = new buzz.sound("music/fatboy"); fatboy.set("id","fatboy");
-	var rex2 = new buzz.sound("music/gdp_rex"); rex2.set("id","rex2");
-	var spiltmilk2 = new buzz.sound("music/gdp_spiltmilk"); spiltmilk2.set("id","spiltmilk2");
-	var hotlineloop = new buzz.sound("music/hotlineloop"); hotlineloop.set("id","hotlineloop");
+	var spiltmilk = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/spilt_milk_neighbor_128"); spiltmilk.set("id","spiltmilk");
+	var money = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/gdp_money2"); money.set("id","money");
+	var bubblebutt = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/gdp_bubblebutt"); bubblebutt.set("id","bubblebutt");
+	var twist = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/twist"); twist.set("id","twist");
+	var wegotyou = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/wegotyou"); wegotyou.set("id","wegotyou");
+	var nahnah = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/gdp_nahnah"); nahnah.set("id","nahnah");
+	var sandstorm = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/sandstorm"); sandstorm.set("id","sandstorm");
+	var Taylor_shake_it_off = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/Taylor_shake_it_off"); Taylor_shake_it_off.set("id","Taylor_shake_it_off");
+	var heman = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/heman"); heman.set("id","heman");
+	var oakenfold = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/oakenfold"); oakenfold.set("id","oakenfold");
+	var grounded = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/grounded"); grounded.set("id","grounded");
+	var singalong = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/gdp_singalong"); singalong.set("id","singalong");
+	var trololo = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/trololo"); trololo.set("id","trololo");
+	var breadfish = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/breadfish"); breadfish.set("id","breadfish");
+	var rex = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/rex_the_dog_128"); rex.set("id","rex");
+	var whitehorse = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/gdp_whitehorse"); whitehorse.set("id", "whitehorse");
+	var halffull = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/gdp_halffull"); halffull.set("id","halffull");
+	var nopanties = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/gdp_nopanties"); nopanties.set("id","nopanties");
+	var walkmen = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/gdp_walkmen"); walkmen.set("id","walkmen");
+	var bazz = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/bazz"); bazz.set("id","bazz");
+	var fatboy = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/fatboy"); fatboy.set("id","fatboy");
+	var rex2 = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/gdp_rex"); rex2.set("id","rex2");
+	var spiltmilk2 = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/gdp_spiltmilk"); spiltmilk2.set("id","spiltmilk2");
+	var hotlineloop = new buzz.sound("https://thetoonsofjosh.github.io/gifdanceparty/v3/music/hotlineloop"); hotlineloop.set("id","hotlineloop");
 	myGroup = new buzz.group([rex,money,walkmen,whitehorse,spiltmilk,spiltmilk2,rex2,bazz,breadfish,singalong,fatboy,grounded,trololo,sandstorm,nopanties,halffull,heman,wegotyou,bubblebutt,hotlineloop,twist,Taylor_shake_it_off,oakenfold,nahnah]); 
 
 	myGroup.setVolume(global_volume);
-	
-
 }
+
+// MODIFIED: This function now checks for a shared URL first
 function done_preload(){
 	console.log("preload complete");
-	init_default();
+    // Try to load from URL first. If it returns false (no hash), load the default.
+    if (!loadFromURL()) {
+	    init_default();
+    }
 	setTimeout(()=>{
 		$("#loading_container").fadeOut(250);
-	},3000);
+	},1000); // Shortened delay
 }
 
-//___________________________________________________________________________________ OTHER FUNCTIONS
 
+//___________________________________________________________________________________ NEW - URL SHARING FUNCTIONS
+
+/**
+ * Gathers all scene data, encodes it, and updates the window's URL hash.
+ */
+function updateURL() {
+    var sceneData = {
+        d: [], // Dancers
+        s: SCENE_INDEX, // Scene
+        m: song_num // Music
+    };
+
+    $(".dance_outter").each(function() {
+        var dancerEl = $(this);
+        var resizerEl = dancerEl.find(".resizer");
+        var dancerImg = dancerEl.find(".dancer");
+
+        var dancer = {
+            n: dancerEl.attr("data-name"),
+            // Store positions and width as percentages for better responsiveness
+            x: parseFloat(dancerEl.css("left")) / $("body").width(),
+            y: parseFloat(dancerEl.css("top")) / $("body").height(),
+            w: parseFloat(resizerEl.css("width")) / $("body").width(),
+            z: parseInt(dancerEl.css("z-index")),
+            f: dancerImg.attr("data-flip") === "true" ? 1 : 0 // 1 for flipped, 0 for normal
+        };
+        sceneData.d.push(dancer);
+    });
+
+    // btoa() creates a Base64-encoded string from a string.
+    var encodedData = btoa(JSON.stringify(sceneData));
+    window.location.hash = encodedData;
+}
+
+
+/**
+ * Reads data from URL hash, decodes it, and builds the scene.
+ * @returns {boolean} - True if a scene was loaded from URL, false otherwise.
+ */
+function loadFromURL() {
+    // Check if there is a hash and it's not empty
+    if (!window.location.hash || window.location.hash.length < 2) return false;
+
+    try {
+        var encodedData = window.location.hash.substring(1);
+        // atob() decodes a Base64-encoded string.
+        var decodedData = atob(encodedData);
+        var sceneData = JSON.parse(decodedData);
+
+        // Clear the dancefloor before adding new elements
+        $("#dancefloor").empty();
+
+        var maxZ = 0;
+        if (sceneData.d && Array.isArray(sceneData.d)) {
+            sceneData.d.forEach(function(dancer) {
+                var bodyWidth = $("body").width();
+                var bodyHeight = $("body").height();
+                // Convert percentage-based positions back to pixels
+                var x_pos = dancer.x * bodyWidth;
+                var y_pos = dancer.y * bodyHeight;
+                var width = dancer.w * bodyWidth;
+                
+                var dancerInfo = ALL_DANCERS.find(d => d.name === dancer.n);
+                var category = dancerInfo ? dancerInfo.category : "";
+
+                add_a_dancer(dancer.n, category, x_pos, y_pos, dancer.z, width, true);
+                
+                // Find the dancer element we just added to set its flip state
+                var addedDancerEl = $(".dance_outter").last();
+                if (dancer.f === 1) {
+                    var flip_element = addedDancerEl.find(".dancer");
+                    flip_element.addClass("flip-h");
+                    flip_element.attr("data-flip","true");
+                }
+
+                // Track the highest z-index to set the global max_depth correctly
+                if(dancer.z > maxZ) {
+                    maxZ = dancer.z;
+                }
+            });
+        }
+        max_depth = maxZ > 0 ? maxZ + 1 : 505;
+
+        // Load Scene
+        SCENE_INDEX = sceneData.s || 0;
+		if(SCENE_INDEX >= ALL_SCENES.length){ SCENE_INDEX = 0; } // Safety check
+		$("#dancefloor").backstretch("backgrounds/"+ALL_SCENES[SCENE_INDEX].name);
+
+        // Load Music
+        song_num = sceneData.m || 0;
+        if(song_num > buzz.sounds.length-1){ song_num = 0; } // Safety check
+
+        return true; // Successfully loaded from URL
+
+    } catch (e) {
+        console.error("Failed to load scene from URL:", e);
+        // Clear the invalid hash to prevent future errors
+        window.location.hash = "";
+        return false; // Failed to load
+    }
+}
+
+
+//___________________________________________________________________________________ OTHER FUNCTIONS
 function makeid(){
   var text = "";
   var possible = "abcdefghijklmnopqrstuvwxyz";
@@ -781,7 +813,6 @@ function makeid(){
 
 
 //___________________________________________________________________________________ RESPONSIVENESS
-
 function responsive(){
 	$(".centerxy").each(function(){ $(this).center(1,1); });
 	$(".centerx").each(function(){ $(this).center(1,0); });
@@ -795,16 +826,13 @@ $(document).ready(function(){
 });
 $(window).resize(function(){
 	responsive()
+    // OPTIONAL: Could call updateURL() here if you want positions to be perfect after a resize,
+    // but it might create too many history entries. Dragging an item after resize will fix it.
 });
 $.fn.center = function(x,y){
 	if(x==1){this.css("left", Math.max(0, (($(this).parent().width() - $(this).outerWidth()) / 2) ) + "px");}
 	if(y==1){this.css("top", Math.max(0, (($(this).parent().height() - $(this).outerHeight()) / 2) ) + "px");}
 	return this;
 };
-
-
-
-
-
 
 document.addEventListener('contextmenu', event => event.preventDefault());
