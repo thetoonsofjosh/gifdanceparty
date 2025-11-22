@@ -137,6 +137,7 @@ var ALL_DANCERS = [
 { name: "makeitrain", artist: "", category: "" },
 { name: "maranda", artist: "", category: "irl" },
 { name: "matrix", artist: "", category: "" },
+{ name: "melissa", artist: "", category: "" },	
 { name: "michj", artist: "", category: "" },
 { name: "milk", artist: "", category: "" },
 { name: "mino", artist: "", category: "" },
