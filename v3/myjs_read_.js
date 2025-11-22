@@ -35,6 +35,7 @@ var ALL_DANCERS = [
 { name: "business", artist: "", category: "" },
 { name: "cact", artist: "", category: "" },
 { name: "cactusgroove", artist: "", category: "" },
+{ name: "cat1", artist: "", category: "" },
 { name: "cd", artist: "", category: "overlay" },
 { name: "celery", artist: "", category: "irl" },
 { name: "charizard", artist: "", category: "" },
