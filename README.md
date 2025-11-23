@@ -8,4 +8,7 @@ Check version 1 here https://thetoonsofjosh.github.io/gifdanceparty/v1/
 # Version 2
 Check version 2 here https://thetoonsofjosh.github.io/gifdanceparty/v2/
 
+# Version 3
+Check version 3 here https://thetoonsofjosh.github.io/gifdanceparty/v3/
+
 It's all complete, almost everything's on here.
