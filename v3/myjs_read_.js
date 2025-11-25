@@ -88,6 +88,7 @@ var ALL_DANCERS = [
 { name: "gene", artist: "", category: "" },
 { name: "ghosty", artist: "", category: "" },
 { name: "gingerbreadman", artist: "", category: "" },
+{ name: "glitchtwist", artist: "", category: "irl" },
 { name: "gloves", artist: "", category: "irl" },
 { name: "glowstix", artist: "", category: "" },
 { name: "goodra", artist: "", category: "" },
