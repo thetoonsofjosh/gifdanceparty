@@ -32,7 +32,6 @@ var ALL_DANCERS = [
 { name: "bunnybabe", artist: "", category: "" },
 { name: "bunnyspank", artist: "", category: "" },
 { name: "business", artist: "", category: "" },
-{ name: "buzz2", artist: "", category: "" },
 { name: "cact", artist: "", category: "" },
 { name: "cactusgroove", artist: "", category: "" },
 { name: "cat1", artist: "", category: "" },
@@ -116,7 +115,6 @@ var ALL_DANCERS = [
 { name: "internetparty", artist: "", category: "overlay" },
 { name: "isthisdani", artist: "", category: "irl" },
 { name: "italiandisco", artist: "", category: "" },
-{ name: "jack2", artist: "", category: "" },
 { name: "jankeyguy", artist: "", category: "" },
 { name: "japandoll", artist: "", category: "" },
 { name: "jasonc1", artist: "", category: "irl" },
@@ -190,7 +188,6 @@ var ALL_DANCERS = [
 { name: "psypsy", artist: "", category: "irl" },
 { name: "putin", artist: "", category: "irl" },
 { name: "rainbow", artist: "", category: "overlay" },
-{ name: "rainbowswirl", artist: "", category: "overlay" },
 { name: "rainbowwheel", artist: "", category: "overlay" },
 { name: "ralphcan", artist: "", category: "irl" },
 { name: "rambley", artist: "", category: "" },
@@ -235,7 +232,6 @@ var ALL_DANCERS = [
 { name: "stripper2", artist: "", category: "" },
 { name: "stripper3", artist: "", category: "" },
 { name: "stripperinblack", artist: "", category: "" },
-{ name: "sully2", artist: "", category: "" },
 { name: "tej", artist: "", category: "irl" },
 { name: "textbanger", artist: "", category: "overlay" },
 { name: "textfeelmusic", artist: "", category: "overlay" },
@@ -261,7 +257,6 @@ var ALL_DANCERS = [
 { name: "unicorn", artist: "", category: "" },
 { name: "veryman", artist: "", category: "" },
 { name: "victorydance", artist: "", category: "irl" },
-{ name: "violet", artist: "", category: "" },
 { name: "wariopump", artist: "", category: "" },
 { name: "wasntme", artist: "", category: "irl" },
 { name: "wildarms", artist: "", category: "" },
@@ -336,8 +331,6 @@ var ALL_SCENES = [
 	{name:"dancefloor_16.jpg"},
 	{name:"dancefloor_17.jpg"},
 	{name:"disco.jpg"},
-	{name:"dancefloor.jpg"},
-	{name:"defaultfloor.jpg"},
 ];
 var SCENE_INDEX = 1;
 

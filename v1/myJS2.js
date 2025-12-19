@@ -178,7 +178,7 @@ function fixChromeBug() {
     }
 }
 var bgNum = 2;
-var bgMax = 25;
+var bgMax = 23;
 var zIndex = 500;
 var zIndex_low = 499;
 var onDancer = 0;
