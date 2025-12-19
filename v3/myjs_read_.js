@@ -173,6 +173,7 @@ var ALL_DANCERS = [
 { name: "pixelbabes", artist: "", category: "" },
 { name: "pixelly", artist: "", category: "" },
 { name: "pizza", artist: "", category: "" },
+{ name: "pizzaguy", artist: "", category: "" },
 { name: "pony", artist: "", category: "" },
 { name: "ponyshuffle", artist: "", category: "" },
 { name: "pooh", artist: "", category: "" },
@@ -330,6 +331,7 @@ var ALL_SCENES = [
 	{name:"dancefloor_15.jpg"},
 	{name:"dancefloor_16.jpg"},
 	{name:"dancefloor_17.jpg"},
+	{name:"dancefloor1.jpg"},
 	{name:"disco.jpg"},
 ];
 var SCENE_INDEX = 1;
