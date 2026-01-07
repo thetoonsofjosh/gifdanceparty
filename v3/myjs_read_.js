@@ -40,6 +40,7 @@ var ALL_DANCERS = [
 { name: "charizard", artist: "", category: "" },
 { name: "charlie", artist: "", category: "" },
 { name: "chicken", artist: "", category: "" },
+{ name: "chienpao", artist: "", category: "" },
 { name: "clapping", artist: "", category: "overlay" },
 { name: "classy", artist: "", category: "irl" },
 { name: "clubpenguin", artist: "", category: "" },
