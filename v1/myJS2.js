@@ -470,7 +470,7 @@ $(window).load(function() {
         },
         aspectRatio: true,
         minWidth: 120,
-        maxWidth: 400
+        maxWidth: 600
     });
     $(".dance_outter").liveDraggable({
         scroll: false,
