@@ -107,6 +107,7 @@ var ALL_DANCERS = [
 { name: "headspin", artist: "", category: "" },
 { name: "heman", artist: "", category: "" },
 { name: "hellicopter", artist: "", category: "" },
+{ name: "hellokitty", artist: "", category: "" },	
 { name: "hipdog", artist: "", category: "" },
 { name: "honeybooboo", artist: "", category: "irl" },
 { name: "hotdog", artist: "", category: "" },
@@ -272,6 +273,7 @@ var ALL_DANCERS = [
 { name: "xray", artist: "", category: "" },
 { name: "yeti", artist: "", category: "" },
 { name: "yoshi", artist: "", category: "" },
+{ name: "yoshi2", artist: "", category: "" },
 { name: "zombie", artist: "", category: "" },
 ];
 
